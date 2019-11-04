@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="risc-cpu">
+		<CBX_INST_ENTRY INSTANCE_NAME="|register-heap|lpm_mux2:inst17|LPM_MUX:lpm_mux_component" CBX_FILE_NAME="mux_j6e.tdf"/>
+	</PROJECT>
+</LOG_ROOT>
