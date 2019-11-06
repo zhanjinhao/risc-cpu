@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Mon Nov 04 21:30:40 2019
+Analysis & Synthesis Status : Successful - Wed Nov 06 21:17:51 2019
 Quartus II Version : 9.0 Build 132 02/25/2009 SJ Full Version
 Revision Name : risc-cpu
-Top-level Entity Name : register-heap
+Top-level Entity Name : cpu
 Family : Cyclone III
-Total logic elements : 51
-    Total combinational functions : 19
-    Dedicated logic registers : 32
-Total registers : 32
-Total pins : 22
+Total logic elements : 188
+    Total combinational functions : 136
+    Dedicated logic registers : 74
+Total registers : 74
+Total pins : 107
 Total virtual pins : 0
-Total memory bits : 0
+Total memory bits : 2,600
 Embedded Multiplier 9-bit elements : 0
 Total PLLs : 0

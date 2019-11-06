@@ -1,5 +1,5 @@
 Analysis & Synthesis report for risc-cpu
-Mon Nov 04 21:30:40 2019
+Wed Nov 06 21:17:51 2019
 Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version
 
 
@@ -12,9 +12,27 @@ Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version
   4. Analysis & Synthesis Source Files Read
   5. Analysis & Synthesis Resource Usage Summary
   6. Analysis & Synthesis Resource Utilization by Entity
-  7. General Register Statistics
-  8. Parameter Settings for User Entity Instance: lpm_mux2:inst17|LPM_MUX:lpm_mux_component
-  9. Analysis & Synthesis Messages
+  7. Analysis & Synthesis RAM Summary
+  8. User-Specified and Inferred Latches
+  9. General Register Statistics
+ 10. Inverted Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Source assignments for lpm_rom0:inst12|altsyncram:altsyncram_component|altsyncram_ej91:auto_generated
+ 13. Source assignments for lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated
+ 14. Source assignments for lpm_counter0:inst6|lpm_counter:lpm_counter_component
+ 15. Parameter Settings for User Entity Instance: lpm_rom0:inst12|altsyncram:altsyncram_component
+ 16. Parameter Settings for User Entity Instance: lpm_latch0:inst13|lpm_latch:lpm_latch_component
+ 17. Parameter Settings for User Entity Instance: lpm_bustri0:inst10|lpm_bustri:lpm_bustri_component
+ 18. Parameter Settings for User Entity Instance: lpm_ram_dq0:inst3|altsyncram:altsyncram_component
+ 19. Parameter Settings for User Entity Instance: lpm_bustri0:inst14|lpm_bustri:lpm_bustri_component
+ 20. Parameter Settings for User Entity Instance: register-heap:inst16|lpm_mux2:inst17|LPM_MUX:lpm_mux_component
+ 21. Parameter Settings for User Entity Instance: lpm_mux1:inst5|LPM_MUX:lpm_mux_component
+ 22. Parameter Settings for User Entity Instance: lpm_bustri0:inst2|lpm_bustri:lpm_bustri_component
+ 23. Parameter Settings for User Entity Instance: lpm_bustri0:inst4|lpm_bustri:lpm_bustri_component
+ 24. Parameter Settings for User Entity Instance: lpm_counter0:inst6|lpm_counter:lpm_counter_component
+ 25. Parameter Settings for User Entity Instance: lpm_bustri0:inst8|lpm_bustri:lpm_bustri_component
+ 26. altsyncram Parameter Settings by Entity Instance
+ 27. Analysis & Synthesis Messages
 
 
 
@@ -40,18 +58,18 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +------------------------------------+------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Nov 04 21:30:40 2019    ;
+; Analysis & Synthesis Status        ; Successful - Wed Nov 06 21:17:51 2019    ;
 ; Quartus II Version                 ; 9.0 Build 132 02/25/2009 SJ Full Version ;
 ; Revision Name                      ; risc-cpu                                 ;
-; Top-level Entity Name              ; register-heap                            ;
+; Top-level Entity Name              ; cpu                                      ;
 ; Family                             ; Cyclone III                              ;
-; Total logic elements               ; 51                                       ;
-;     Total combinational functions  ; 19                                       ;
-;     Dedicated logic registers      ; 32                                       ;
-; Total registers                    ; 32                                       ;
-; Total pins                         ; 22                                       ;
+; Total logic elements               ; 188                                      ;
+;     Total combinational functions  ; 136                                      ;
+;     Dedicated logic registers      ; 74                                       ;
+; Total registers                    ; 74                                       ;
+; Total pins                         ; 107                                      ;
 ; Total virtual pins                 ; 0                                        ;
-; Total memory bits                  ; 0                                        ;
+; Total memory bits                  ; 2,600                                    ;
 ; Embedded Multiplier 9-bit elements ; 0                                        ;
 ; Total PLLs                         ; 0                                        ;
 +------------------------------------+------------------------------------------+
@@ -63,7 +81,7 @@ applicable agreement for further details.
 ; Option                                                         ; Setting            ; Default Value      ;
 +----------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                         ; EP3C40Q240C8       ;                    ;
-; Top-level entity name                                          ; register-heap      ; risc-cpu           ;
+; Top-level entity name                                          ; cpu                ; risc-cpu           ;
 ; Family name                                                    ; Cyclone III        ; Stratix II         ;
 ; Use Generated Physical Constraints File                        ; Off                ;                    ;
 ; Use smart compilation                                          ; Off                ; Off                ;
@@ -134,69 +152,159 @@ applicable agreement for further details.
 +----------------------------------------------------------------+--------------------+--------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                               ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                               ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------+
-; DFF8.vhd                         ; yes             ; User VHDL File                     ; C:/Users/ISJINHAO/Desktop/10.30/risc-cpu/DFF8.vhd          ;
-; register-heap.bdf                ; yes             ; User Block Diagram/Schematic File  ; C:/Users/ISJINHAO/Desktop/10.30/risc-cpu/register-heap.bdf ;
-; 24-decoder.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/ISJINHAO/Desktop/10.30/risc-cpu/24-decoder.bdf    ;
-; lpm_mux2.vhd                     ; yes             ; User Wizard-Generated File         ; C:/Users/ISJINHAO/Desktop/10.30/risc-cpu/lpm_mux2.vhd      ;
-; LPM_MUX.tdf                      ; yes             ; Megafunction                       ; d:/altera/90/quartus/libraries/megafunctions/LPM_MUX.tdf   ;
-; aglobal90.inc                    ; yes             ; Megafunction                       ; d:/altera/90/quartus/libraries/megafunctions/aglobal90.inc ;
-; muxlut.inc                       ; yes             ; Megafunction                       ; d:/altera/90/quartus/libraries/megafunctions/muxlut.inc    ;
-; bypassff.inc                     ; yes             ; Megafunction                       ; d:/altera/90/quartus/libraries/megafunctions/bypassff.inc  ;
-; altshift.inc                     ; yes             ; Megafunction                       ; d:/altera/90/quartus/libraries/megafunctions/altshift.inc  ;
-; db/mux_j6e.tdf                   ; yes             ; Auto-Generated Megafunction        ; C:/Users/ISJINHAO/Desktop/10.30/risc-cpu/db/mux_j6e.tdf    ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                         ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                         ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------+
+; DFF8.vhd                         ; yes             ; User VHDL File                     ; D:/workspace/risc-cpu/risc-cpu/DFF8.vhd                              ;
+; register-heap.bdf                ; yes             ; User Block Diagram/Schematic File  ; D:/workspace/risc-cpu/risc-cpu/register-heap.bdf                     ;
+; ALU.vhd                          ; yes             ; User VHDL File                     ; D:/workspace/risc-cpu/risc-cpu/ALU.vhd                               ;
+; sequence-generator.bdf           ; yes             ; User Block Diagram/Schematic File  ; D:/workspace/risc-cpu/risc-cpu/sequence-generator.bdf                ;
+; cpu.bdf                          ; yes             ; User Block Diagram/Schematic File  ; D:/workspace/risc-cpu/risc-cpu/cpu.bdf                               ;
+; controler.vhd                    ; yes             ; User VHDL File                     ; D:/workspace/risc-cpu/risc-cpu/controler.vhd                         ;
+; lpm_rom0.vhd                     ; yes             ; User Wizard-Generated File         ; D:/workspace/risc-cpu/risc-cpu/lpm_rom0.vhd                          ;
+; lpm_ram_dq0.vhd                  ; yes             ; User Wizard-Generated File         ; D:/workspace/risc-cpu/risc-cpu/lpm_ram_dq0.vhd                       ;
+; lpm_mux1.vhd                     ; yes             ; User Wizard-Generated File         ; D:/workspace/risc-cpu/risc-cpu/lpm_mux1.vhd                          ;
+; lpm_latch0.vhd                   ; yes             ; User Wizard-Generated File         ; D:/workspace/risc-cpu/risc-cpu/lpm_latch0.vhd                        ;
+; 24-decoder.bdf                   ; yes             ; User Block Diagram/Schematic File  ; D:/workspace/risc-cpu/risc-cpu/24-decoder.bdf                        ;
+; lpm_bustri0.vhd                  ; yes             ; User Wizard-Generated File         ; D:/workspace/risc-cpu/risc-cpu/lpm_bustri0.vhd                       ;
+; lpm_mux2.vhd                     ; yes             ; User Wizard-Generated File         ; D:/workspace/risc-cpu/risc-cpu/lpm_mux2.vhd                          ;
+; lpm_counter0.vhd                 ; yes             ; User Wizard-Generated File         ; D:/workspace/risc-cpu/risc-cpu/lpm_counter0.vhd                      ;
+; altsyncram.tdf                   ; yes             ; Megafunction                       ; d:/altera/90/quartus/libraries/megafunctions/altsyncram.tdf          ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                       ; d:/altera/90/quartus/libraries/megafunctions/stratix_ram_block.inc   ;
+; lpm_mux.inc                      ; yes             ; Megafunction                       ; d:/altera/90/quartus/libraries/megafunctions/lpm_mux.inc             ;
+; lpm_decode.inc                   ; yes             ; Megafunction                       ; d:/altera/90/quartus/libraries/megafunctions/lpm_decode.inc          ;
+; aglobal90.inc                    ; yes             ; Megafunction                       ; d:/altera/90/quartus/libraries/megafunctions/aglobal90.inc           ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                       ; d:/altera/90/quartus/libraries/megafunctions/a_rdenreg.inc           ;
+; altrom.inc                       ; yes             ; Megafunction                       ; d:/altera/90/quartus/libraries/megafunctions/altrom.inc              ;
+; altram.inc                       ; yes             ; Megafunction                       ; d:/altera/90/quartus/libraries/megafunctions/altram.inc              ;
+; altdpram.inc                     ; yes             ; Megafunction                       ; d:/altera/90/quartus/libraries/megafunctions/altdpram.inc            ;
+; altqpram.inc                     ; yes             ; Megafunction                       ; d:/altera/90/quartus/libraries/megafunctions/altqpram.inc            ;
+; db/altsyncram_ej91.tdf           ; yes             ; Auto-Generated Megafunction        ; D:/workspace/risc-cpu/risc-cpu/db/altsyncram_ej91.tdf                ;
+; lpm_latch.tdf                    ; yes             ; Megafunction                       ; d:/altera/90/quartus/libraries/megafunctions/lpm_latch.tdf           ;
+; lpm_constant.inc                 ; yes             ; Megafunction                       ; d:/altera/90/quartus/libraries/megafunctions/lpm_constant.inc        ;
+; lpm_bustri.tdf                   ; yes             ; Megafunction                       ; d:/altera/90/quartus/libraries/megafunctions/lpm_bustri.tdf          ;
+; db/altsyncram_srh1.tdf           ; yes             ; Auto-Generated Megafunction        ; D:/workspace/risc-cpu/risc-cpu/db/altsyncram_srh1.tdf                ;
+; LPM_MUX.tdf                      ; yes             ; Megafunction                       ; d:/altera/90/quartus/libraries/megafunctions/LPM_MUX.tdf             ;
+; muxlut.inc                       ; yes             ; Megafunction                       ; d:/altera/90/quartus/libraries/megafunctions/muxlut.inc              ;
+; bypassff.inc                     ; yes             ; Megafunction                       ; d:/altera/90/quartus/libraries/megafunctions/bypassff.inc            ;
+; altshift.inc                     ; yes             ; Megafunction                       ; d:/altera/90/quartus/libraries/megafunctions/altshift.inc            ;
+; db/mux_j6e.tdf                   ; yes             ; Auto-Generated Megafunction        ; D:/workspace/risc-cpu/risc-cpu/db/mux_j6e.tdf                        ;
+; 74139M.bdf                       ; yes             ; Megafunction                       ; d:/altera/90/quartus/libraries/others/maxplus2/74139M.bdf            ;
+; db/mux_a6e.tdf                   ; yes             ; Auto-Generated Megafunction        ; D:/workspace/risc-cpu/risc-cpu/db/mux_a6e.tdf                        ;
+; lpm_counter.tdf                  ; yes             ; Megafunction                       ; d:/altera/90/quartus/libraries/megafunctions/lpm_counter.tdf         ;
+; lpm_add_sub.inc                  ; yes             ; Megafunction                       ; d:/altera/90/quartus/libraries/megafunctions/lpm_add_sub.inc         ;
+; cmpconst.inc                     ; yes             ; Megafunction                       ; d:/altera/90/quartus/libraries/megafunctions/cmpconst.inc            ;
+; lpm_compare.inc                  ; yes             ; Megafunction                       ; d:/altera/90/quartus/libraries/megafunctions/lpm_compare.inc         ;
+; lpm_counter.inc                  ; yes             ; Megafunction                       ; d:/altera/90/quartus/libraries/megafunctions/lpm_counter.inc         ;
+; dffeea.inc                       ; yes             ; Megafunction                       ; d:/altera/90/quartus/libraries/megafunctions/dffeea.inc              ;
+; alt_synch_counter.inc            ; yes             ; Megafunction                       ; d:/altera/90/quartus/libraries/megafunctions/alt_synch_counter.inc   ;
+; alt_synch_counter_f.inc          ; yes             ; Megafunction                       ; d:/altera/90/quartus/libraries/megafunctions/alt_synch_counter_f.inc ;
+; alt_counter_f10ke.inc            ; yes             ; Megafunction                       ; d:/altera/90/quartus/libraries/megafunctions/alt_counter_f10ke.inc   ;
+; alt_counter_stratix.inc          ; yes             ; Megafunction                       ; d:/altera/90/quartus/libraries/megafunctions/alt_counter_stratix.inc ;
+; db/cntr_k5j.tdf                  ; yes             ; Auto-Generated Megafunction        ; D:/workspace/risc-cpu/risc-cpu/db/cntr_k5j.tdf                       ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------+
 
 
-+---------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary             ;
-+---------------------------------------------+-----------+
-; Resource                                    ; Usage     ;
-+---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 51        ;
-;                                             ;           ;
-; Total combinational functions               ; 19        ;
-; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 16        ;
-;     -- 3 input functions                    ; 3         ;
-;     -- <=2 input functions                  ; 0         ;
-;                                             ;           ;
-; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 19        ;
-;     -- arithmetic mode                      ; 0         ;
-;                                             ;           ;
-; Total registers                             ; 32        ;
-;     -- Dedicated logic registers            ; 32        ;
-;     -- I/O registers                        ; 0         ;
-;                                             ;           ;
-; I/O pins                                    ; 22        ;
-; Maximum fan-out node                        ; CLK~input ;
-; Maximum fan-out                             ; 32        ;
-; Total fan-out                               ; 191       ;
-; Average fan-out                             ; 2.01      ;
-+---------------------------------------------+-----------+
++------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                  ;
++---------------------------------------------+--------------------------------+
+; Resource                                    ; Usage                          ;
++---------------------------------------------+--------------------------------+
+; Estimated Total logic elements              ; 188                            ;
+;                                             ;                                ;
+; Total combinational functions               ; 136                            ;
+; Logic element usage by number of LUT inputs ;                                ;
+;     -- 4 input functions                    ; 55                             ;
+;     -- 3 input functions                    ; 53                             ;
+;     -- <=2 input functions                  ; 28                             ;
+;                                             ;                                ;
+; Logic elements by mode                      ;                                ;
+;     -- normal mode                          ; 121                            ;
+;     -- arithmetic mode                      ; 15                             ;
+;                                             ;                                ;
+; Total registers                             ; 74                             ;
+;     -- Dedicated logic registers            ; 74                             ;
+;     -- I/O registers                        ; 0                              ;
+;                                             ;                                ;
+; I/O pins                                    ; 107                            ;
+; Total memory bits                           ; 2600                           ;
+; Maximum fan-out node                        ; sequence-generator:inst7|inst1 ;
+; Maximum fan-out                             ; 60                             ;
+; Total fan-out                               ; 1115                           ;
+; Average fan-out                             ; 2.45                           ;
++---------------------------------------------+--------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                            ;
-+-----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------+--------------+
-; Compilation Hierarchy Node        ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                             ; Library Name ;
-+-----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------+--------------+
-; |register-heap                    ; 19 (0)            ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 22   ; 0            ; |register-heap                                                                  ; work         ;
-;    |24-decoder:inst15|            ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |register-heap|24-decoder:inst15                                                ; work         ;
-;    |DFF8:inst12|                  ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |register-heap|DFF8:inst12                                                      ; work         ;
-;    |DFF8:inst16|                  ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |register-heap|DFF8:inst16                                                      ; work         ;
-;    |DFF8:inst6|                   ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |register-heap|DFF8:inst6                                                       ; work         ;
-;    |DFF8:inst|                    ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |register-heap|DFF8:inst                                                        ; work         ;
-;    |lpm_mux2:inst17|              ; 16 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |register-heap|lpm_mux2:inst17                                                  ; work         ;
-;       |lpm_mux:lpm_mux_component| ; 16 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |register-heap|lpm_mux2:inst17|lpm_mux:lpm_mux_component                        ; work         ;
-;          |mux_j6e:auto_generated| ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |register-heap|lpm_mux2:inst17|lpm_mux:lpm_mux_component|mux_j6e:auto_generated ; work         ;
-+-----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                               ;
++-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                        ; Library Name ;
++-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------+--------------+
+; |cpu                                      ; 136 (2)           ; 74 (0)       ; 2600        ; 0            ; 0       ; 0         ; 107  ; 0            ; |cpu                                                                                       ; work         ;
+;    |ALU:inst9|                            ; 33 (33)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu|ALU:inst9                                                                             ; work         ;
+;    |DFF8:inst17|                          ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu|DFF8:inst17                                                                           ; work         ;
+;    |DFF8:inst18|                          ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu|DFF8:inst18                                                                           ; work         ;
+;    |DFF8:inst|                            ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu|DFF8:inst                                                                             ; work         ;
+;    |controler:inst11|                     ; 16 (16)           ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu|controler:inst11                                                                      ; work         ;
+;    |lpm_bustri0:inst8|                    ; 59 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu|lpm_bustri0:inst8                                                                     ; work         ;
+;       |lpm_bustri:lpm_bustri_component|   ; 59 (59)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu|lpm_bustri0:inst8|lpm_bustri:lpm_bustri_component                                     ; work         ;
+;    |lpm_counter0:inst6|                   ; 8 (0)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu|lpm_counter0:inst6                                                                    ; work         ;
+;       |lpm_counter:lpm_counter_component| ; 8 (0)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu|lpm_counter0:inst6|lpm_counter:lpm_counter_component                                  ; work         ;
+;          |cntr_k5j:auto_generated|        ; 8 (8)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu|lpm_counter0:inst6|lpm_counter:lpm_counter_component|cntr_k5j:auto_generated          ; work         ;
+;    |lpm_latch0:inst13|                    ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu|lpm_latch0:inst13                                                                     ; work         ;
+;       |lpm_latch:lpm_latch_component|     ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu|lpm_latch0:inst13|lpm_latch:lpm_latch_component                                       ; work         ;
+;    |lpm_mux1:inst5|                       ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu|lpm_mux1:inst5                                                                        ; work         ;
+;       |lpm_mux:lpm_mux_component|         ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu|lpm_mux1:inst5|lpm_mux:lpm_mux_component                                              ; work         ;
+;          |mux_a6e:auto_generated|         ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu|lpm_mux1:inst5|lpm_mux:lpm_mux_component|mux_a6e:auto_generated                       ; work         ;
+;    |lpm_ram_dq0:inst3|                    ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu|lpm_ram_dq0:inst3                                                                     ; work         ;
+;       |altsyncram:altsyncram_component|   ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu|lpm_ram_dq0:inst3|altsyncram:altsyncram_component                                     ; work         ;
+;          |altsyncram_srh1:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu|lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated      ; work         ;
+;    |lpm_rom0:inst12|                      ; 0 (0)             ; 0 (0)        ; 552         ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu|lpm_rom0:inst12                                                                       ; work         ;
+;       |altsyncram:altsyncram_component|   ; 0 (0)             ; 0 (0)        ; 552         ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu|lpm_rom0:inst12|altsyncram:altsyncram_component                                       ; work         ;
+;          |altsyncram_ej91:auto_generated| ; 0 (0)             ; 0 (0)        ; 552         ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu|lpm_rom0:inst12|altsyncram:altsyncram_component|altsyncram_ej91:auto_generated        ; work         ;
+;    |register-heap:inst16|                 ; 6 (0)             ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu|register-heap:inst16                                                                  ; work         ;
+;       |24-decoder:inst2|                  ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu|register-heap:inst16|24-decoder:inst2                                                 ; work         ;
+;          |74139M:inst6|                   ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu|register-heap:inst16|24-decoder:inst2|74139M:inst6                                    ; work         ;
+;       |DFF8:inst12|                       ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu|register-heap:inst16|DFF8:inst12                                                      ; work         ;
+;       |DFF8:inst16|                       ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu|register-heap:inst16|DFF8:inst16                                                      ; work         ;
+;       |DFF8:inst6|                        ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu|register-heap:inst16|DFF8:inst6                                                       ; work         ;
+;       |DFF8:inst|                         ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu|register-heap:inst16|DFF8:inst                                                        ; work         ;
+;       |lpm_mux2:inst17|                   ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu|register-heap:inst16|lpm_mux2:inst17                                                  ; work         ;
+;          |lpm_mux:lpm_mux_component|      ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu|register-heap:inst16|lpm_mux2:inst17|lpm_mux:lpm_mux_component                        ; work         ;
+;             |mux_j6e:auto_generated|      ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu|register-heap:inst16|lpm_mux2:inst17|lpm_mux:lpm_mux_component|mux_j6e:auto_generated ; work         ;
+;    |sequence-generator:inst7|             ; 2 (2)             ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu|sequence-generator:inst7                                                              ; work         ;
++-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                              ;
++---------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+---------+
+; Name                                                                                        ; Type ; Mode        ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF     ;
++---------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+---------+
+; lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ALTSYNCRAM ; AUTO ; Single Port ; 256          ; 8            ; --           ; --           ; 2048 ; RAM.mif ;
+; lpm_rom0:inst12|altsyncram:altsyncram_component|altsyncram_ej91:auto_generated|ALTSYNCRAM   ; AUTO ; ROM         ; 24           ; 24           ; --           ; --           ; 576  ; ROM.mif ;
++---------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+---------+
+
+
++-----------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                       ;
++------------------------------------------------------------+---------------------+------------------------+
+; Latch Name                                                 ; Latch Enable Signal ; Free of Timing Hazards ;
++------------------------------------------------------------+---------------------+------------------------+
+; lpm_latch0:inst13|lpm_latch:lpm_latch_component|latches[7] ; inst15              ; yes                    ;
+; lpm_latch0:inst13|lpm_latch:lpm_latch_component|latches[6] ; inst15              ; yes                    ;
+; lpm_latch0:inst13|lpm_latch:lpm_latch_component|latches[5] ; inst15              ; yes                    ;
+; lpm_latch0:inst13|lpm_latch:lpm_latch_component|latches[4] ; inst15              ; yes                    ;
+; lpm_latch0:inst13|lpm_latch:lpm_latch_component|latches[3] ; inst15              ; yes                    ;
+; lpm_latch0:inst13|lpm_latch:lpm_latch_component|latches[2] ; inst15              ; yes                    ;
+; lpm_latch0:inst13|lpm_latch:lpm_latch_component|latches[1] ; inst15              ; yes                    ;
+; lpm_latch0:inst13|lpm_latch:lpm_latch_component|latches[0] ; inst15              ; yes                    ;
+; Number of user-specified and inferred latches = 8          ;                     ;                        ;
++------------------------------------------------------------+---------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
 +------------------------------------------------------+
@@ -204,33 +312,340 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 32    ;
+; Total registers                              ; 74    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Synchronous Load   ; 10    ;
+; Number of registers using Asynchronous Clear ; 18    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 24    ;
+; Number of registers using Clock Enable       ; 59    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+----------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: lpm_mux2:inst17|LPM_MUX:lpm_mux_component ;
-+------------------------+-------------+-------------------------------------------------+
-; Parameter Name         ; Value       ; Type                                            ;
-+------------------------+-------------+-------------------------------------------------+
-; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                      ;
-; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                    ;
-; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                    ;
-; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                  ;
-; LPM_WIDTH              ; 8           ; Signed Integer                                  ;
-; LPM_SIZE               ; 4           ; Signed Integer                                  ;
-; LPM_WIDTHS             ; 2           ; Signed Integer                                  ;
-; LPM_PIPELINE           ; 0           ; Signed Integer                                  ;
-; CBXI_PARAMETER         ; mux_j6e     ; Untyped                                         ;
-; DEVICE_FAMILY          ; Cyclone III ; Untyped                                         ;
-+------------------------+-------------+-------------------------------------------------+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; controler:inst11|M[0]                  ; 3       ;
+; Total number of inverted registers = 1 ;         ;
++----------------------------------------+---------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; 17:1               ; 3 bits    ; 33 LEs        ; 21 LEs               ; 12 LEs                 ; Yes        ; |cpu|controler:inst11|M[2] ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |cpu|ALU:inst9|Add0        ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; No         ; |cpu|ALU:inst9|Add0        ;
+; 8:1                ; 8 bits    ; 40 LEs        ; 24 LEs               ; 16 LEs                 ; No         ; |cpu|ALU:inst9|Mux0        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+
+
++-------------------------------------------------------------------------------------------------------+
+; Source assignments for lpm_rom0:inst12|altsyncram:altsyncram_component|altsyncram_ej91:auto_generated ;
++---------------------------------+--------------------+------+-----------------------------------------+
+; Assignment                      ; Value              ; From ; To                                      ;
++---------------------------------+--------------------+------+-----------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                       ;
++---------------------------------+--------------------+------+-----------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------+
+; Source assignments for lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated ;
++---------------------------------+--------------------+------+-------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                        ;
++---------------------------------+--------------------+------+-------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                         ;
++---------------------------------+--------------------+------+-------------------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; Source assignments for lpm_counter0:inst6|lpm_counter:lpm_counter_component ;
++---------------------------+-------+------+----------------------------------+
+; Assignment                ; Value ; From ; To                               ;
++---------------------------+-------+------+----------------------------------+
+; SUPPRESS_DA_RULE_INTERNAL ; a101  ; -    ; -                                ;
+; SUPPRESS_DA_RULE_INTERNAL ; s102  ; -    ; -                                ;
+; SUPPRESS_DA_RULE_INTERNAL ; s103  ; -    ; -                                ;
++---------------------------+-------+------+----------------------------------+
+
+
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_rom0:inst12|altsyncram:altsyncram_component ;
++------------------------------------+----------------------+----------------------------------+
+; Parameter Name                     ; Value                ; Type                             ;
++------------------------------------+----------------------+----------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                          ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                       ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                     ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                     ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                   ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                          ;
+; OPERATION_MODE                     ; ROM                  ; Untyped                          ;
+; WIDTH_A                            ; 24                   ; Signed Integer                   ;
+; WIDTHAD_A                          ; 5                    ; Signed Integer                   ;
+; NUMWORDS_A                         ; 24                   ; Signed Integer                   ;
+; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                          ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                          ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                          ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                          ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                          ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                          ;
+; WIDTH_B                            ; 1                    ; Untyped                          ;
+; WIDTHAD_B                          ; 1                    ; Untyped                          ;
+; NUMWORDS_B                         ; 1                    ; Untyped                          ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                          ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                          ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                          ;
+; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                          ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                          ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                          ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                          ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                          ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                          ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                          ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                          ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                          ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer                   ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                          ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                          ;
+; BYTE_SIZE                          ; 8                    ; Untyped                          ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                          ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                          ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                          ;
+; INIT_FILE                          ; ROM.mif              ; Untyped                          ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                          ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped                          ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                          ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                          ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                          ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                          ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                          ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                          ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                          ;
+; DEVICE_FAMILY                      ; Cyclone III          ; Untyped                          ;
+; CBXI_PARAMETER                     ; altsyncram_ej91      ; Untyped                          ;
++------------------------------------+----------------------+----------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_latch0:inst13|lpm_latch:lpm_latch_component ;
++----------------+--------+--------------------------------------------------------------------+
+; Parameter Name ; Value  ; Type                                                               ;
++----------------+--------+--------------------------------------------------------------------+
+; LPM_WIDTH      ; 8      ; Signed Integer                                                     ;
+; LPM_AVALUE     ; UNUSED ; Untyped                                                            ;
++----------------+--------+--------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_bustri0:inst10|lpm_bustri:lpm_bustri_component ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; LPM_WIDTH      ; 8     ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_ram_dq0:inst3|altsyncram:altsyncram_component ;
++------------------------------------+----------------------+------------------------------------+
+; Parameter Name                     ; Value                ; Type                               ;
++------------------------------------+----------------------+------------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                            ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                         ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                       ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                       ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                     ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                            ;
+; OPERATION_MODE                     ; SINGLE_PORT          ; Untyped                            ;
+; WIDTH_A                            ; 8                    ; Signed Integer                     ;
+; WIDTHAD_A                          ; 8                    ; Signed Integer                     ;
+; NUMWORDS_A                         ; 256                  ; Signed Integer                     ;
+; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                            ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                            ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                            ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                            ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                            ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                            ;
+; WIDTH_B                            ; 1                    ; Untyped                            ;
+; WIDTHAD_B                          ; 1                    ; Untyped                            ;
+; NUMWORDS_B                         ; 1                    ; Untyped                            ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                            ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                            ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                            ;
+; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                            ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                            ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                            ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                            ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                            ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                            ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                            ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                            ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                            ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer                     ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                            ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                            ;
+; BYTE_SIZE                          ; 8                    ; Untyped                            ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                            ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                            ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                            ;
+; INIT_FILE                          ; RAM.mif              ; Untyped                            ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                            ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped                            ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                            ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                            ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                            ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                            ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                            ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                            ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                            ;
+; DEVICE_FAMILY                      ; Cyclone III          ; Untyped                            ;
+; CBXI_PARAMETER                     ; altsyncram_srh1      ; Untyped                            ;
++------------------------------------+----------------------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_bustri0:inst14|lpm_bustri:lpm_bustri_component ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; LPM_WIDTH      ; 8     ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register-heap:inst16|lpm_mux2:inst17|LPM_MUX:lpm_mux_component ;
++------------------------+-------------+----------------------------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                                                 ;
++------------------------+-------------+----------------------------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                                           ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                                         ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                                         ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                                       ;
+; LPM_WIDTH              ; 8           ; Signed Integer                                                       ;
+; LPM_SIZE               ; 4           ; Signed Integer                                                       ;
+; LPM_WIDTHS             ; 2           ; Signed Integer                                                       ;
+; LPM_PIPELINE           ; 0           ; Signed Integer                                                       ;
+; CBXI_PARAMETER         ; mux_j6e     ; Untyped                                                              ;
+; DEVICE_FAMILY          ; Cyclone III ; Untyped                                                              ;
++------------------------+-------------+----------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_mux1:inst5|LPM_MUX:lpm_mux_component ;
++------------------------+-------------+------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                           ;
++------------------------+-------------+------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                     ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                   ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                   ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                 ;
+; LPM_WIDTH              ; 2           ; Signed Integer                                 ;
+; LPM_SIZE               ; 2           ; Signed Integer                                 ;
+; LPM_WIDTHS             ; 1           ; Signed Integer                                 ;
+; LPM_PIPELINE           ; 0           ; Signed Integer                                 ;
+; CBXI_PARAMETER         ; mux_a6e     ; Untyped                                        ;
+; DEVICE_FAMILY          ; Cyclone III ; Untyped                                        ;
++------------------------+-------------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_bustri0:inst2|lpm_bustri:lpm_bustri_component ;
++----------------+-------+-----------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                  ;
++----------------+-------+-----------------------------------------------------------------------+
+; LPM_WIDTH      ; 8     ; Signed Integer                                                        ;
++----------------+-------+-----------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_bustri0:inst4|lpm_bustri:lpm_bustri_component ;
++----------------+-------+-----------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                  ;
++----------------+-------+-----------------------------------------------------------------------+
+; LPM_WIDTH      ; 8     ; Signed Integer                                                        ;
++----------------+-------+-----------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_counter0:inst6|lpm_counter:lpm_counter_component ;
++------------------------+-------------+------------------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                                       ;
++------------------------+-------------+------------------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                                 ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                               ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                               ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                             ;
+; LPM_WIDTH              ; 8           ; Signed Integer                                             ;
+; LPM_DIRECTION          ; UP          ; Untyped                                                    ;
+; LPM_MODULUS            ; 0           ; Untyped                                                    ;
+; LPM_AVALUE             ; UNUSED      ; Untyped                                                    ;
+; LPM_SVALUE             ; UNUSED      ; Untyped                                                    ;
+; LPM_PORT_UPDOWN        ; PORT_UNUSED ; Untyped                                                    ;
+; DEVICE_FAMILY          ; Cyclone III ; Untyped                                                    ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                                    ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                                         ;
+; NOT_GATE_PUSH_BACK     ; ON          ; NOT_GATE_PUSH_BACK                                         ;
+; CARRY_CNT_EN           ; SMART       ; Untyped                                                    ;
+; LABWIDE_SCLR           ; ON          ; Untyped                                                    ;
+; USE_NEW_VERSION        ; TRUE        ; Untyped                                                    ;
+; CBXI_PARAMETER         ; cntr_k5j    ; Untyped                                                    ;
++------------------------+-------------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_bustri0:inst8|lpm_bustri:lpm_bustri_component ;
++----------------+-------+-----------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                  ;
++----------------+-------+-----------------------------------------------------------------------+
+; LPM_WIDTH      ; 8     ; Signed Integer                                                        ;
++----------------+-------+-----------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------+
+; altsyncram Parameter Settings by Entity Instance                                              ;
++-------------------------------------------+---------------------------------------------------+
+; Name                                      ; Value                                             ;
++-------------------------------------------+---------------------------------------------------+
+; Number of entity instances                ; 2                                                 ;
+; Entity Instance                           ; lpm_rom0:inst12|altsyncram:altsyncram_component   ;
+;     -- OPERATION_MODE                     ; ROM                                               ;
+;     -- WIDTH_A                            ; 24                                                ;
+;     -- NUMWORDS_A                         ; 24                                                ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                      ;
+;     -- WIDTH_B                            ; 1                                                 ;
+;     -- NUMWORDS_B                         ; 1                                                 ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                            ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                      ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                              ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                         ;
+; Entity Instance                           ; lpm_ram_dq0:inst3|altsyncram:altsyncram_component ;
+;     -- OPERATION_MODE                     ; SINGLE_PORT                                       ;
+;     -- WIDTH_A                            ; 8                                                 ;
+;     -- NUMWORDS_A                         ; 256                                               ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                      ;
+;     -- WIDTH_B                            ; 1                                                 ;
+;     -- NUMWORDS_B                         ; 1                                                 ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                            ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                      ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                              ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                         ;
++-------------------------------------------+---------------------------------------------------+
 
 
 +-------------------------------+
@@ -239,7 +654,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.0 Build 132 02/25/2009 SJ Full Version
-    Info: Processing started: Mon Nov 04 21:30:38 2019
+    Info: Processing started: Wed Nov 06 21:17:48 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off risc-cpu -c risc-cpu
 Info: Found 2 design units, including 1 entities, in source file DFF8.vhd
     Info: Found design unit 1: DFF8-ONE
@@ -273,17 +688,96 @@ Info: Found 2 design units, including 1 entities, in source file lpm_latch0.vhd
     Info: Found entity 1: lpm_latch0
 Info: Found 1 design units, including 1 entities, in source file 24-decoder.bdf
     Info: Found entity 1: 24-decoder
-Info: Found 2 design units, including 1 entities, in source file lpm_mux2.vhd
-    Info: Found design unit 1: lpm_mux2-SYN
-    Info: Found entity 1: lpm_mux2
 Info: Found 2 design units, including 1 entities, in source file lpm_bustri0.vhd
     Info: Found design unit 1: lpm_bustri0-SYN
     Info: Found entity 1: lpm_bustri0
-Info: Elaborating entity "register-heap" for the top level hierarchy
-Info: Elaborating entity "lpm_mux2" for hierarchy "lpm_mux2:inst17"
-Info: Elaborating entity "LPM_MUX" for hierarchy "lpm_mux2:inst17|LPM_MUX:lpm_mux_component"
-Info: Elaborated megafunction instantiation "lpm_mux2:inst17|LPM_MUX:lpm_mux_component"
-Info: Instantiated megafunction "lpm_mux2:inst17|LPM_MUX:lpm_mux_component" with the following parameter:
+Info: Found 2 design units, including 1 entities, in source file lpm_mux2.vhd
+    Info: Found design unit 1: lpm_mux2-SYN
+    Info: Found entity 1: lpm_mux2
+Info: Found 2 design units, including 1 entities, in source file lpm_counter0.vhd
+    Info: Found design unit 1: lpm_counter0-SYN
+    Info: Found entity 1: lpm_counter0
+Info: Elaborating entity "cpu" for the top level hierarchy
+Info: Elaborating entity "sequence-generator" for hierarchy "sequence-generator:inst7"
+Info: Elaborating entity "ALU" for hierarchy "ALU:inst9"
+Warning (10492): VHDL Process Statement warning at ALU.vhd(19): signal "A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at ALU.vhd(19): signal "B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at ALU.vhd(20): signal "A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at ALU.vhd(20): signal "B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at ALU.vhd(21): signal "A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at ALU.vhd(22): signal "A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at ALU.vhd(23): signal "A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at ALU.vhd(23): signal "B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at ALU.vhd(24): signal "A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at ALU.vhd(24): signal "B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at ALU.vhd(25): signal "A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at ALU.vhd(25): signal "B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at ALU.vhd(26): signal "A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at ALU.vhd(26): signal "B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at ALU.vhd(30): signal "M" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info: Elaborating entity "DFF8" for hierarchy "DFF8:inst"
+Info: Elaborating entity "lpm_rom0" for hierarchy "lpm_rom0:inst12"
+Info: Elaborating entity "altsyncram" for hierarchy "lpm_rom0:inst12|altsyncram:altsyncram_component"
+Info: Elaborated megafunction instantiation "lpm_rom0:inst12|altsyncram:altsyncram_component"
+Info: Instantiated megafunction "lpm_rom0:inst12|altsyncram:altsyncram_component" with the following parameter:
+    Info: Parameter "address_aclr_a" = "NONE"
+    Info: Parameter "clock_enable_input_a" = "BYPASS"
+    Info: Parameter "clock_enable_output_a" = "BYPASS"
+    Info: Parameter "init_file" = "ROM.mif"
+    Info: Parameter "intended_device_family" = "Cyclone III"
+    Info: Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
+    Info: Parameter "lpm_type" = "altsyncram"
+    Info: Parameter "numwords_a" = "24"
+    Info: Parameter "operation_mode" = "ROM"
+    Info: Parameter "outdata_aclr_a" = "NONE"
+    Info: Parameter "outdata_reg_a" = "UNREGISTERED"
+    Info: Parameter "widthad_a" = "5"
+    Info: Parameter "width_a" = "24"
+    Info: Parameter "width_byteena_a" = "1"
+Info: Found 1 design units, including 1 entities, in source file db/altsyncram_ej91.tdf
+    Info: Found entity 1: altsyncram_ej91
+Info: Elaborating entity "altsyncram_ej91" for hierarchy "lpm_rom0:inst12|altsyncram:altsyncram_component|altsyncram_ej91:auto_generated"
+Info: Elaborating entity "controler" for hierarchy "controler:inst11"
+Warning (10492): VHDL Process Statement warning at controler.vhd(38): signal "M" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info: Elaborating entity "lpm_latch0" for hierarchy "lpm_latch0:inst13"
+Info: Elaborating entity "lpm_latch" for hierarchy "lpm_latch0:inst13|lpm_latch:lpm_latch_component"
+Info: Elaborated megafunction instantiation "lpm_latch0:inst13|lpm_latch:lpm_latch_component"
+Info: Instantiated megafunction "lpm_latch0:inst13|lpm_latch:lpm_latch_component" with the following parameter:
+    Info: Parameter "lpm_type" = "LPM_LATCH"
+    Info: Parameter "lpm_width" = "8"
+Info: Elaborating entity "lpm_bustri0" for hierarchy "lpm_bustri0:inst10"
+Info: Elaborating entity "lpm_bustri" for hierarchy "lpm_bustri0:inst10|lpm_bustri:lpm_bustri_component"
+Info: Elaborated megafunction instantiation "lpm_bustri0:inst10|lpm_bustri:lpm_bustri_component"
+Info: Instantiated megafunction "lpm_bustri0:inst10|lpm_bustri:lpm_bustri_component" with the following parameter:
+    Info: Parameter "lpm_type" = "LPM_BUSTRI"
+    Info: Parameter "lpm_width" = "8"
+Info: Elaborating entity "lpm_ram_dq0" for hierarchy "lpm_ram_dq0:inst3"
+Info: Elaborating entity "altsyncram" for hierarchy "lpm_ram_dq0:inst3|altsyncram:altsyncram_component"
+Info: Elaborated megafunction instantiation "lpm_ram_dq0:inst3|altsyncram:altsyncram_component"
+Info: Instantiated megafunction "lpm_ram_dq0:inst3|altsyncram:altsyncram_component" with the following parameter:
+    Info: Parameter "clock_enable_input_a" = "BYPASS"
+    Info: Parameter "clock_enable_output_a" = "BYPASS"
+    Info: Parameter "init_file" = "RAM.mif"
+    Info: Parameter "intended_device_family" = "Cyclone III"
+    Info: Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
+    Info: Parameter "lpm_type" = "altsyncram"
+    Info: Parameter "numwords_a" = "256"
+    Info: Parameter "operation_mode" = "SINGLE_PORT"
+    Info: Parameter "outdata_aclr_a" = "NONE"
+    Info: Parameter "outdata_reg_a" = "UNREGISTERED"
+    Info: Parameter "power_up_uninitialized" = "FALSE"
+    Info: Parameter "read_during_write_mode_port_a" = "NEW_DATA_NO_NBE_READ"
+    Info: Parameter "widthad_a" = "8"
+    Info: Parameter "width_a" = "8"
+    Info: Parameter "width_byteena_a" = "1"
+Info: Found 1 design units, including 1 entities, in source file db/altsyncram_srh1.tdf
+    Info: Found entity 1: altsyncram_srh1
+Info: Elaborating entity "altsyncram_srh1" for hierarchy "lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated"
+Info: Elaborating entity "register-heap" for hierarchy "register-heap:inst16"
+Info: Elaborating entity "lpm_mux2" for hierarchy "register-heap:inst16|lpm_mux2:inst17"
+Info: Elaborating entity "LPM_MUX" for hierarchy "register-heap:inst16|lpm_mux2:inst17|LPM_MUX:lpm_mux_component"
+Info: Elaborated megafunction instantiation "register-heap:inst16|lpm_mux2:inst17|LPM_MUX:lpm_mux_component"
+Info: Instantiated megafunction "register-heap:inst16|lpm_mux2:inst17|LPM_MUX:lpm_mux_component" with the following parameter:
     Info: Parameter "LPM_WIDTH" = "8"
     Info: Parameter "LPM_SIZE" = "4"
     Info: Parameter "LPM_WIDTHS" = "2"
@@ -292,21 +786,61 @@ Info: Instantiated megafunction "lpm_mux2:inst17|LPM_MUX:lpm_mux_component" with
     Info: Parameter "LPM_HINT" = "UNUSED"
 Info: Found 1 design units, including 1 entities, in source file db/mux_j6e.tdf
     Info: Found entity 1: mux_j6e
-Info: Elaborating entity "mux_j6e" for hierarchy "lpm_mux2:inst17|LPM_MUX:lpm_mux_component|mux_j6e:auto_generated"
-Info: Elaborating entity "DFF8" for hierarchy "DFF8:inst6"
-Info: Elaborating entity "24-decoder" for hierarchy "24-decoder:inst15"
+Info: Elaborating entity "mux_j6e" for hierarchy "register-heap:inst16|lpm_mux2:inst17|LPM_MUX:lpm_mux_component|mux_j6e:auto_generated"
+Info: Elaborating entity "24-decoder" for hierarchy "register-heap:inst16|24-decoder:inst2"
+Info: Elaborating entity "74139M" for hierarchy "register-heap:inst16|24-decoder:inst2|74139M:inst6"
+Info: Elaborated megafunction instantiation "register-heap:inst16|24-decoder:inst2|74139M:inst6"
+Info: Elaborating entity "lpm_mux1" for hierarchy "lpm_mux1:inst5"
+Info: Elaborating entity "LPM_MUX" for hierarchy "lpm_mux1:inst5|LPM_MUX:lpm_mux_component"
+Info: Elaborated megafunction instantiation "lpm_mux1:inst5|LPM_MUX:lpm_mux_component"
+Info: Instantiated megafunction "lpm_mux1:inst5|LPM_MUX:lpm_mux_component" with the following parameter:
+    Info: Parameter "LPM_WIDTH" = "2"
+    Info: Parameter "LPM_SIZE" = "2"
+    Info: Parameter "LPM_WIDTHS" = "1"
+    Info: Parameter "LPM_PIPELINE" = "0"
+    Info: Parameter "LPM_TYPE" = "LPM_MUX"
+    Info: Parameter "LPM_HINT" = "UNUSED"
+Info: Found 1 design units, including 1 entities, in source file db/mux_a6e.tdf
+    Info: Found entity 1: mux_a6e
+Info: Elaborating entity "mux_a6e" for hierarchy "lpm_mux1:inst5|LPM_MUX:lpm_mux_component|mux_a6e:auto_generated"
+Info: Elaborating entity "lpm_counter0" for hierarchy "lpm_counter0:inst6"
+Info: Elaborating entity "lpm_counter" for hierarchy "lpm_counter0:inst6|lpm_counter:lpm_counter_component"
+Info: Elaborated megafunction instantiation "lpm_counter0:inst6|lpm_counter:lpm_counter_component"
+Info: Instantiated megafunction "lpm_counter0:inst6|lpm_counter:lpm_counter_component" with the following parameter:
+    Info: Parameter "lpm_direction" = "UP"
+    Info: Parameter "lpm_port_updown" = "PORT_UNUSED"
+    Info: Parameter "lpm_type" = "LPM_COUNTER"
+    Info: Parameter "lpm_width" = "8"
+Info: Found 1 design units, including 1 entities, in source file db/cntr_k5j.tdf
+    Info: Found entity 1: cntr_k5j
+Info: Elaborating entity "cntr_k5j" for hierarchy "lpm_counter0:inst6|lpm_counter:lpm_counter_component|cntr_k5j:auto_generated"
+Warning: Synthesized away the following node(s):
+    Warning: Synthesized away the following RAM node(s):
+        Warning (14320): Synthesized away node "lpm_rom0:inst12|altsyncram:altsyncram_component|altsyncram_ej91:auto_generated|q_a[23]"
+Warning: Tri-state node(s) do not directly drive top-level pin(s)
+    Warning: Converted the fan-out from the tri-state buffer "lpm_bustri0:inst8|lpm_bustri:lpm_bustri_component|dout[7]" to the node "lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|q_a[7]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "lpm_bustri0:inst8|lpm_bustri:lpm_bustri_component|dout[6]" to the node "lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|q_a[6]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "lpm_bustri0:inst8|lpm_bustri:lpm_bustri_component|dout[5]" to the node "lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|q_a[5]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "lpm_bustri0:inst8|lpm_bustri:lpm_bustri_component|dout[4]" to the node "lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|q_a[4]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "lpm_bustri0:inst8|lpm_bustri:lpm_bustri_component|dout[3]" to the node "lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|q_a[3]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "lpm_bustri0:inst8|lpm_bustri:lpm_bustri_component|dout[2]" to the node "lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|q_a[2]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "lpm_bustri0:inst8|lpm_bustri:lpm_bustri_component|dout[1]" to the node "lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|q_a[1]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "lpm_bustri0:inst8|lpm_bustri:lpm_bustri_component|dout[0]" to the node "lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|q_a[0]" into an OR gate
+Info: Registers with preset signals will power-up high
+Info: DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Warning: Ignored assignments for entity "risc-cpu" -- entity does not exist in design
     Warning: Assignment of entity set_global_assignment -name OPTIMIZE_SSN OFF -entity "risc-cpu" -family "Cyclone III" is ignored
     Warning: Assignment of entity set_global_assignment -name LL_ROOT_REGION ON -entity "risc-cpu" -section_id "Root Region" is ignored
     Warning: Assignment of entity set_global_assignment -name LL_MEMBER_STATE LOCKED -entity "risc-cpu" -section_id "Root Region" is ignored
-Info: Implemented 73 device resources after synthesis - the final resource count might be different
-    Info: Implemented 14 input pins
-    Info: Implemented 8 output pins
-    Info: Implemented 51 logic cells
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 257 megabytes
-    Info: Processing ended: Mon Nov 04 21:30:40 2019
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+Info: Implemented 334 device resources after synthesis - the final resource count might be different
+    Info: Implemented 11 input pins
+    Info: Implemented 96 output pins
+    Info: Implemented 196 logic cells
+    Info: Implemented 31 RAM segments
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 32 warnings
+    Info: Peak virtual memory: 262 megabytes
+    Info: Processing ended: Wed Nov 06 21:17:51 2019
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03
 
 

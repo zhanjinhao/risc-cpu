@@ -47,8 +47,8 @@ applicable agreement for further details.
 	(port
 		(pt 0 80)
 		(input)
-		(text "clock" (rect 0 0 29 14)(font "Arial" (font_size 8)))
-		(text "clock" (rect 26 74 49 87)(font "Arial" (font_size 8)))
+		(text "inclock" (rect 0 0 38 14)(font "Arial" (font_size 8)))
+		(text "inclock" (rect 26 74 58 87)(font "Arial" (font_size 8)))
 		(line (pt 0 80)(pt 16 80)(line_width 1))
 	)
 	(port

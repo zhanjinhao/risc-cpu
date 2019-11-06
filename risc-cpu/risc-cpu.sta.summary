@@ -2,4 +2,100 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
+Type  : Slow 1200mV 85C Model Setup 'sequence-generator:inst7|inst1'
+Slack : -11.393
+TNS   : -647.804
+
+Type  : Slow 1200mV 85C Model Setup 'sequence-generator:inst7|inst'
+Slack : -10.354
+TNS   : -19.615
+
+Type  : Slow 1200mV 85C Model Setup 'sequence-generator:inst7|inst3'
+Slack : -10.330
+TNS   : -106.129
+
+Type  : Slow 1200mV 85C Model Setup 'CLK'
+Slack : -0.755
+TNS   : -0.948
+
+Type  : Slow 1200mV 85C Model Hold 'CLK'
+Slack : -0.493
+TNS   : -1.517
+
+Type  : Slow 1200mV 85C Model Hold 'sequence-generator:inst7|inst'
+Slack : 0.715
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'sequence-generator:inst7|inst3'
+Slack : 0.783
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'sequence-generator:inst7|inst1'
+Slack : 2.740
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'sequence-generator:inst7|inst1'
+Slack : -10.833
+TNS   : -600.557
+
+Type  : Slow 1200mV 0C Model Setup 'sequence-generator:inst7|inst3'
+Slack : -9.660
+TNS   : -97.424
+
+Type  : Slow 1200mV 0C Model Setup 'sequence-generator:inst7|inst'
+Slack : -9.590
+TNS   : -17.990
+
+Type  : Slow 1200mV 0C Model Setup 'CLK'
+Slack : -0.595
+TNS   : -0.685
+
+Type  : Slow 1200mV 0C Model Hold 'CLK'
+Slack : -0.557
+TNS   : -1.704
+
+Type  : Slow 1200mV 0C Model Hold 'sequence-generator:inst7|inst'
+Slack : 0.678
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'sequence-generator:inst7|inst3'
+Slack : 0.727
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'sequence-generator:inst7|inst1'
+Slack : 2.487
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'sequence-generator:inst7|inst1'
+Slack : -4.220
+TNS   : -231.558
+
+Type  : Fast 1200mV 0C Model Setup 'sequence-generator:inst7|inst'
+Slack : -3.759
+TNS   : -5.562
+
+Type  : Fast 1200mV 0C Model Setup 'sequence-generator:inst7|inst3'
+Slack : -3.703
+TNS   : -35.945
+
+Type  : Fast 1200mV 0C Model Setup 'CLK'
+Slack : 0.099
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'CLK'
+Slack : -0.528
+TNS   : -1.912
+
+Type  : Fast 1200mV 0C Model Hold 'sequence-generator:inst7|inst'
+Slack : 0.266
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'sequence-generator:inst7|inst3'
+Slack : 0.314
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'sequence-generator:inst7|inst1'
+Slack : 1.108
+TNS   : 0.000
+
 ------------------------------------------------------------

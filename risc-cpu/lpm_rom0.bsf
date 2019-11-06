@@ -33,15 +33,15 @@ applicable agreement for further details.
 	(port
 		(pt 0 48)
 		(input)
-		(text "clock" (rect 0 0 29 14)(font "Arial" (font_size 8)))
-		(text "clock" (rect 26 42 49 55)(font "Arial" (font_size 8)))
+		(text "inclock" (rect 0 0 38 14)(font "Arial" (font_size 8)))
+		(text "inclock" (rect 26 42 58 55)(font "Arial" (font_size 8)))
 		(line (pt 0 48)(pt 16 48)(line_width 1))
 	)
 	(port
 		(pt 160 40)
 		(output)
-		(text "q[21..0]" (rect 0 0 42 14)(font "Arial" (font_size 8)))
-		(text "q[21..0]" (rect 105 34 141 47)(font "Arial" (font_size 8)))
+		(text "q[23..0]" (rect 0 0 42 14)(font "Arial" (font_size 8)))
+		(text "q[23..0]" (rect 105 34 141 47)(font "Arial" (font_size 8)))
 		(line (pt 160 40)(pt 144 40)(line_width 3))
 	)
 	(drawing
