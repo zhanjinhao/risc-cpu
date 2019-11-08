@@ -1,5 +1,5 @@
 Fitter report for risc-cpu
-Wed Nov 06 21:16:48 2019
+Fri Nov 08 11:43:27 2019
 Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version
 
 
@@ -30,7 +30,7 @@ Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version
  22. Non-Global High Fan-Out Signals
  23. Fitter RAM Summary
  24. |cpu|lpm_rom0:inst12|altsyncram:altsyncram_component|altsyncram_ej91:auto_generated|ALTSYNCRAM
- 25. |cpu|lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ALTSYNCRAM
+ 25. |cpu|lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ALTSYNCRAM
  26. Interconnect Usage Summary
  27. LAB Logic Elements
  28. LAB-wide Signals
@@ -74,7 +74,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +------------------------------------+------------------------------------------+
-; Fitter Status                      ; Successful - Wed Nov 06 21:16:48 2019    ;
+; Fitter Status                      ; Successful - Fri Nov 08 11:43:27 2019    ;
 ; Quartus II Version                 ; 9.0 Build 132 02/25/2009 SJ Full Version ;
 ; Revision Name                      ; risc-cpu                                 ;
 ; Top-level Entity Name              ; cpu                                      ;
@@ -158,12 +158,12 @@ applicable agreement for further details.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 2.09        ;
+; Average used               ; 1.00        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     1 processor            ; 100.0%      ;
-;     2-4 processors         ;  12.5%      ;
+;     2-4 processors         ; < 0.1%      ;
 ;     5-8 processors         ;   0.0%      ;
 +----------------------------+-------------+
 
@@ -880,7 +880,7 @@ Note: User assignments will override these defaults. The user specified values a
 ;          |mux_a6e:auto_generated|         ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |cpu|lpm_mux1:inst5|lpm_mux:lpm_mux_component|mux_a6e:auto_generated                       ; work         ;
 ;    |lpm_ram_dq0:inst3|                    ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 2048        ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |cpu|lpm_ram_dq0:inst3                                                                     ; work         ;
 ;       |altsyncram:altsyncram_component|   ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 2048        ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |cpu|lpm_ram_dq0:inst3|altsyncram:altsyncram_component                                     ; work         ;
-;          |altsyncram_srh1:auto_generated| ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 2048        ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |cpu|lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated      ; work         ;
+;          |altsyncram_v4i1:auto_generated| ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 2048        ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |cpu|lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated      ; work         ;
 ;    |lpm_rom0:inst12|                      ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 552         ; 2    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |cpu|lpm_rom0:inst12                                                                       ; work         ;
 ;       |altsyncram:altsyncram_component|   ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 552         ; 2    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |cpu|lpm_rom0:inst12|altsyncram:altsyncram_component                                       ; work         ;
 ;          |altsyncram_ej91:auto_generated| ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 552         ; 2    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |cpu|lpm_rom0:inst12|altsyncram:altsyncram_component|altsyncram_ej91:auto_generated        ; work         ;
@@ -1142,14 +1142,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------------------------------------------------------------------------+---------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fitter RAM Summary                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ;
-+---------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+---------+--------------------------------+
-; Name                                                                                        ; Type ; Mode        ; Clock Mode   ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Port A Input Registers ; Port A Output Registers ; Port B Input Registers ; Port B Output Registers ; Size ; Implementation Port A Depth ; Implementation Port A Width ; Implementation Port B Depth ; Implementation Port B Width ; Implementation Bits ; M9Ks ; MIF     ; Location                       ;
-+---------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+---------+--------------------------------+
-; lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ALTSYNCRAM ; AUTO ; Single Port ; Single Clock ; 256          ; 8            ; --           ; --           ; yes                    ; no                      ; --                     ; --                      ; 2048 ; 256                         ; 8                           ; --                          ; --                          ; 2048                ; 1    ; RAM.mif ; M9K_X40_Y23_N0                 ;
-; lpm_rom0:inst12|altsyncram:altsyncram_component|altsyncram_ej91:auto_generated|ALTSYNCRAM   ; AUTO ; ROM         ; Single Clock ; 24           ; 24           ; --           ; --           ; yes                    ; no                      ; --                     ; --                      ; 576  ; 24                          ; 23                          ; --                          ; --                          ; 552                 ; 2    ; ROM.mif ; M9K_X40_Y21_N0, M9K_X40_Y22_N0 ;
-+---------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+---------+--------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter RAM Summary                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ;
++---------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+------------+--------------------------------+
+; Name                                                                                        ; Type ; Mode        ; Clock Mode   ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Port A Input Registers ; Port A Output Registers ; Port B Input Registers ; Port B Output Registers ; Size ; Implementation Port A Depth ; Implementation Port A Width ; Implementation Port B Depth ; Implementation Port B Width ; Implementation Bits ; M9Ks ; MIF        ; Location                       ;
++---------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+------------+--------------------------------+
+; lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ALTSYNCRAM ; AUTO ; Single Port ; Single Clock ; 256          ; 8            ; --           ; --           ; yes                    ; no                      ; --                     ; --                      ; 2048 ; 256                         ; 8                           ; --                          ; --                          ; 2048                ; 1    ; testr1.mif ; M9K_X40_Y23_N0                 ;
+; lpm_rom0:inst12|altsyncram:altsyncram_component|altsyncram_ej91:auto_generated|ALTSYNCRAM   ; AUTO ; ROM         ; Single Clock ; 24           ; 24           ; --           ; --           ; yes                    ; no                      ; --                     ; --                      ; 576  ; 24                          ; 23                          ; --                          ; --                          ; 552                 ; 2    ; ROM.mif    ; M9K_X40_Y21_N0, M9K_X40_Y22_N0 ;
++---------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+------------+--------------------------------+
 Note: Fitter may spread logical memories into multiple blocks to improve timing. The actual required RAM blocks can be found in the Fitter Resource Usage section.
 
 
@@ -1161,7 +1161,7 @@ Please use Quartus II to view the memory report data.
 
 
 +--------------------------------------------------------------------------------------------------+
-; |cpu|lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ALTSYNCRAM ;
+; |cpu|lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ALTSYNCRAM ;
 +--------------------------------------------------------------------------------------------------+
 Memory report data cannot be output to ASCII.
 Please use Quartus II to view the memory report data.
@@ -1644,7 +1644,7 @@ Please use Quartus II to view the memory report data.
 ; Peak Regional Wire - Fit Attempt 1  ; 0.000  ;
 ; Auto Fit Point 7 - Fit Attempt 1    ; ff     ;
 ; Time - Fit Attempt 1                ; 1      ;
-; Time in tsm_tan.dll - Fit Attempt 1 ; 0.125  ;
+; Time in tsm_tan.dll - Fit Attempt 1 ; 0.094  ;
 +-------------------------------------+--------+
 
 
@@ -1661,7 +1661,7 @@ Please use Quartus II to view the memory report data.
 ; Late Slack - Fit Attempt 1          ; -2147483648 ;
 ; Late Wire Use - Fit Attempt 1       ; 1           ;
 ; Time - Fit Attempt 1                ; 1           ;
-; Time in tsm_tan.dll - Fit Attempt 1 ; 0.203       ;
+; Time in tsm_tan.dll - Fit Attempt 1 ; 0.156       ;
 +-------------------------------------+-------------+
 
 
@@ -1671,7 +1671,7 @@ Please use Quartus II to view the memory report data.
 Info: *******************************************************************
 Info: Running Quartus II Fitter
     Info: Version 9.0 Build 132 02/25/2009 SJ Full Version
-    Info: Processing started: Wed Nov 06 21:16:39 2019
+    Info: Processing started: Fri Nov 08 11:43:19 2019
 Info: Command: quartus_fit --read_settings_files=off --write_settings_files=off risc-cpu -c risc-cpu
 Info: Parallel compilation is enabled and will use 4 of the 8 processors detected
 Info: Selected device EP3C40Q240C8 for design "risc-cpu"
@@ -1906,7 +1906,7 @@ Info: I/O bank details before I/O pin placement
         Info: I/O bank number 6 does not use VREF pins and has undetermined VCCIO pins. 1 total pin(s) used --  12 pins available
         Info: I/O bank number 7 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  18 pins available
         Info: I/O bank number 8 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  18 pins available
-Info: Fitter preparation operations ending: elapsed time is 00:00:01
+Info: Fitter preparation operations ending: elapsed time is 00:00:00
 Info: Fitter placement preparation operations beginning
 Info: Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info: Fitter placement operations beginning
@@ -1975,9 +1975,9 @@ Info: Delay annotation completed successfully
 Info: Generated suppressed messages file D:/workspace/risc-cpu/risc-cpu/risc-cpu.fit.smsg
 Info: Quartus II Fitter was successful. 0 errors, 50 warnings
     Info: Peak virtual memory: 369 megabytes
-    Info: Processing ended: Wed Nov 06 21:16:48 2019
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:09
+    Info: Processing ended: Fri Nov 08 11:43:27 2019
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:08
 
 
 +----------------------------+

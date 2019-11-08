@@ -15,7 +15,6 @@ ARCHITECTURE behav OF controler IS
 BEGIN
 	PROCESS(RST,CLK,IDR,IRD)
 	BEGIN
-		M<="00001";
 		IF RST='1' THEN
 			 M<="00001";
 		ELSE

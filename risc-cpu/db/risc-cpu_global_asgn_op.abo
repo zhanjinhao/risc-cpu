@@ -1605,7 +1605,7 @@ Chip Device Options:
 
 
 - ATOM ------------------------
-	ATOM_NAME: lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a7 -- UNIQUE
+	ATOM_NAME: lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a7 -- UNIQUE
 	Atom Hier Name: 
 	Atom Id: 34
 	Atom Type: cycloneiii_ram_block (WYSIWYG)
@@ -1635,25 +1635,25 @@ Chip Device Options:
 		21: [PORTAADDR]	  DFF8:inst18|S[6]	LIT INDEX 6	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		22: [PORTAADDR]	  DFF8:inst18|S[7]	LIT INDEX 7	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 	OUTPUTS (Int. Connections):
-		0: [PORTADATAOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|q_a[7]	LIT INDEX 0 FANOUTS 2
-		1: [OBSERVABLEPORTAWEREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a7~porta_we_reg	LIT INDEX 0 FANOUTS 0
-		2: [OBSERVABLEPORTADATAINREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a7~porta_datain_reg0	LIT INDEX 0 FANOUTS 0
-		3: [OBSERVABLEPORTAMEMORYREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a7~porta_memory_reg0	LIT INDEX 0 FANOUTS 0
-		4: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a7~porta_address_reg0	LIT INDEX 0 FANOUTS 0
-		5: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a7~porta_address_reg1	LIT INDEX 1 FANOUTS 0
-		6: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a7~porta_address_reg2	LIT INDEX 2 FANOUTS 0
-		7: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a7~porta_address_reg3	LIT INDEX 3 FANOUTS 0
-		8: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a7~porta_address_reg4	LIT INDEX 4 FANOUTS 0
-		9: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a7~porta_address_reg5	LIT INDEX 5 FANOUTS 0
-		10: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a7~porta_address_reg6	LIT INDEX 6 FANOUTS 0
-		11: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a7~porta_address_reg7	LIT INDEX 7 FANOUTS 0
-		12: [OBSERVABLEPORTAREREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a7~porta_re_reg	LIT INDEX 0 FANOUTS 0
+		0: [PORTADATAOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|q_a[7]	LIT INDEX 0 FANOUTS 2
+		1: [OBSERVABLEPORTAWEREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a7~porta_we_reg	LIT INDEX 0 FANOUTS 0
+		2: [OBSERVABLEPORTADATAINREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a7~porta_datain_reg0	LIT INDEX 0 FANOUTS 0
+		3: [OBSERVABLEPORTAMEMORYREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a7~porta_memory_reg0	LIT INDEX 0 FANOUTS 0
+		4: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a7~porta_address_reg0	LIT INDEX 0 FANOUTS 0
+		5: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a7~porta_address_reg1	LIT INDEX 1 FANOUTS 0
+		6: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a7~porta_address_reg2	LIT INDEX 2 FANOUTS 0
+		7: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a7~porta_address_reg3	LIT INDEX 3 FANOUTS 0
+		8: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a7~porta_address_reg4	LIT INDEX 4 FANOUTS 0
+		9: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a7~porta_address_reg5	LIT INDEX 5 FANOUTS 0
+		10: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a7~porta_address_reg6	LIT INDEX 6 FANOUTS 0
+		11: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a7~porta_address_reg7	LIT INDEX 7 FANOUTS 0
+		12: [OBSERVABLEPORTAREREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a7~porta_re_reg	LIT INDEX 0 FANOUTS 0
 
 	PARAMETER LIST:
 		operation_mode                 = single_port
 		ram_block_type                 = auto
-		logical_ram_name               = lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ALTSYNCRAM
-		init_file                      = RAM.mif
+		logical_ram_name               = lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ALTSYNCRAM
+		init_file                      = testr1.mif
 		init_file_layout               = port_a
 		data_interleave_width_in_bits  = 1
 		data_interleave_offset_in_bits = 1
@@ -1671,7 +1671,7 @@ Chip Device Options:
 
 
 - ATOM ------------------------
-	ATOM_NAME: lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a6 -- UNIQUE
+	ATOM_NAME: lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a6 -- UNIQUE
 	Atom Hier Name: 
 	Atom Id: 35
 	Atom Type: cycloneiii_ram_block (WYSIWYG)
@@ -1701,25 +1701,25 @@ Chip Device Options:
 		21: [PORTAADDR]	  DFF8:inst18|S[6]	LIT INDEX 6	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		22: [PORTAADDR]	  DFF8:inst18|S[7]	LIT INDEX 7	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 	OUTPUTS (Int. Connections):
-		0: [PORTADATAOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|q_a[6]	LIT INDEX 0 FANOUTS 2
-		1: [OBSERVABLEPORTAWEREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a6~porta_we_reg	LIT INDEX 0 FANOUTS 0
-		2: [OBSERVABLEPORTADATAINREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a6~porta_datain_reg0	LIT INDEX 0 FANOUTS 0
-		3: [OBSERVABLEPORTAMEMORYREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a6~porta_memory_reg0	LIT INDEX 0 FANOUTS 0
-		4: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a6~porta_address_reg0	LIT INDEX 0 FANOUTS 0
-		5: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a6~porta_address_reg1	LIT INDEX 1 FANOUTS 0
-		6: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a6~porta_address_reg2	LIT INDEX 2 FANOUTS 0
-		7: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a6~porta_address_reg3	LIT INDEX 3 FANOUTS 0
-		8: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a6~porta_address_reg4	LIT INDEX 4 FANOUTS 0
-		9: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a6~porta_address_reg5	LIT INDEX 5 FANOUTS 0
-		10: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a6~porta_address_reg6	LIT INDEX 6 FANOUTS 0
-		11: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a6~porta_address_reg7	LIT INDEX 7 FANOUTS 0
-		12: [OBSERVABLEPORTAREREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a6~porta_re_reg	LIT INDEX 0 FANOUTS 0
+		0: [PORTADATAOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|q_a[6]	LIT INDEX 0 FANOUTS 2
+		1: [OBSERVABLEPORTAWEREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a6~porta_we_reg	LIT INDEX 0 FANOUTS 0
+		2: [OBSERVABLEPORTADATAINREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a6~porta_datain_reg0	LIT INDEX 0 FANOUTS 0
+		3: [OBSERVABLEPORTAMEMORYREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a6~porta_memory_reg0	LIT INDEX 0 FANOUTS 0
+		4: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a6~porta_address_reg0	LIT INDEX 0 FANOUTS 0
+		5: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a6~porta_address_reg1	LIT INDEX 1 FANOUTS 0
+		6: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a6~porta_address_reg2	LIT INDEX 2 FANOUTS 0
+		7: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a6~porta_address_reg3	LIT INDEX 3 FANOUTS 0
+		8: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a6~porta_address_reg4	LIT INDEX 4 FANOUTS 0
+		9: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a6~porta_address_reg5	LIT INDEX 5 FANOUTS 0
+		10: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a6~porta_address_reg6	LIT INDEX 6 FANOUTS 0
+		11: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a6~porta_address_reg7	LIT INDEX 7 FANOUTS 0
+		12: [OBSERVABLEPORTAREREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a6~porta_re_reg	LIT INDEX 0 FANOUTS 0
 
 	PARAMETER LIST:
 		operation_mode                 = single_port
 		ram_block_type                 = auto
-		logical_ram_name               = lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ALTSYNCRAM
-		init_file                      = RAM.mif
+		logical_ram_name               = lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ALTSYNCRAM
+		init_file                      = testr1.mif
 		init_file_layout               = port_a
 		data_interleave_width_in_bits  = 1
 		data_interleave_offset_in_bits = 1
@@ -1737,7 +1737,7 @@ Chip Device Options:
 
 
 - ATOM ------------------------
-	ATOM_NAME: lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a5 -- UNIQUE
+	ATOM_NAME: lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a5 -- UNIQUE
 	Atom Hier Name: 
 	Atom Id: 36
 	Atom Type: cycloneiii_ram_block (WYSIWYG)
@@ -1767,25 +1767,25 @@ Chip Device Options:
 		21: [PORTAADDR]	  DFF8:inst18|S[6]	LIT INDEX 6	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		22: [PORTAADDR]	  DFF8:inst18|S[7]	LIT INDEX 7	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 	OUTPUTS (Int. Connections):
-		0: [PORTADATAOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|q_a[5]	LIT INDEX 0 FANOUTS 2
-		1: [OBSERVABLEPORTAWEREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a5~porta_we_reg	LIT INDEX 0 FANOUTS 0
-		2: [OBSERVABLEPORTADATAINREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a5~porta_datain_reg0	LIT INDEX 0 FANOUTS 0
-		3: [OBSERVABLEPORTAMEMORYREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a5~porta_memory_reg0	LIT INDEX 0 FANOUTS 0
-		4: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a5~porta_address_reg0	LIT INDEX 0 FANOUTS 0
-		5: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a5~porta_address_reg1	LIT INDEX 1 FANOUTS 0
-		6: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a5~porta_address_reg2	LIT INDEX 2 FANOUTS 0
-		7: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a5~porta_address_reg3	LIT INDEX 3 FANOUTS 0
-		8: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a5~porta_address_reg4	LIT INDEX 4 FANOUTS 0
-		9: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a5~porta_address_reg5	LIT INDEX 5 FANOUTS 0
-		10: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a5~porta_address_reg6	LIT INDEX 6 FANOUTS 0
-		11: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a5~porta_address_reg7	LIT INDEX 7 FANOUTS 0
-		12: [OBSERVABLEPORTAREREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a5~porta_re_reg	LIT INDEX 0 FANOUTS 0
+		0: [PORTADATAOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|q_a[5]	LIT INDEX 0 FANOUTS 2
+		1: [OBSERVABLEPORTAWEREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a5~porta_we_reg	LIT INDEX 0 FANOUTS 0
+		2: [OBSERVABLEPORTADATAINREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a5~porta_datain_reg0	LIT INDEX 0 FANOUTS 0
+		3: [OBSERVABLEPORTAMEMORYREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a5~porta_memory_reg0	LIT INDEX 0 FANOUTS 0
+		4: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a5~porta_address_reg0	LIT INDEX 0 FANOUTS 0
+		5: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a5~porta_address_reg1	LIT INDEX 1 FANOUTS 0
+		6: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a5~porta_address_reg2	LIT INDEX 2 FANOUTS 0
+		7: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a5~porta_address_reg3	LIT INDEX 3 FANOUTS 0
+		8: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a5~porta_address_reg4	LIT INDEX 4 FANOUTS 0
+		9: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a5~porta_address_reg5	LIT INDEX 5 FANOUTS 0
+		10: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a5~porta_address_reg6	LIT INDEX 6 FANOUTS 0
+		11: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a5~porta_address_reg7	LIT INDEX 7 FANOUTS 0
+		12: [OBSERVABLEPORTAREREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a5~porta_re_reg	LIT INDEX 0 FANOUTS 0
 
 	PARAMETER LIST:
 		operation_mode                 = single_port
 		ram_block_type                 = auto
-		logical_ram_name               = lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ALTSYNCRAM
-		init_file                      = RAM.mif
+		logical_ram_name               = lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ALTSYNCRAM
+		init_file                      = testr1.mif
 		init_file_layout               = port_a
 		data_interleave_width_in_bits  = 1
 		data_interleave_offset_in_bits = 1
@@ -1803,7 +1803,7 @@ Chip Device Options:
 
 
 - ATOM ------------------------
-	ATOM_NAME: lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a4 -- UNIQUE
+	ATOM_NAME: lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a4 -- UNIQUE
 	Atom Hier Name: 
 	Atom Id: 37
 	Atom Type: cycloneiii_ram_block (WYSIWYG)
@@ -1833,25 +1833,25 @@ Chip Device Options:
 		21: [PORTAADDR]	  DFF8:inst18|S[6]	LIT INDEX 6	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		22: [PORTAADDR]	  DFF8:inst18|S[7]	LIT INDEX 7	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 	OUTPUTS (Int. Connections):
-		0: [PORTADATAOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|q_a[4]	LIT INDEX 0 FANOUTS 2
-		1: [OBSERVABLEPORTAWEREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a4~porta_we_reg	LIT INDEX 0 FANOUTS 0
-		2: [OBSERVABLEPORTADATAINREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a4~porta_datain_reg0	LIT INDEX 0 FANOUTS 0
-		3: [OBSERVABLEPORTAMEMORYREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a4~porta_memory_reg0	LIT INDEX 0 FANOUTS 0
-		4: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a4~porta_address_reg0	LIT INDEX 0 FANOUTS 0
-		5: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a4~porta_address_reg1	LIT INDEX 1 FANOUTS 0
-		6: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a4~porta_address_reg2	LIT INDEX 2 FANOUTS 0
-		7: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a4~porta_address_reg3	LIT INDEX 3 FANOUTS 0
-		8: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a4~porta_address_reg4	LIT INDEX 4 FANOUTS 0
-		9: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a4~porta_address_reg5	LIT INDEX 5 FANOUTS 0
-		10: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a4~porta_address_reg6	LIT INDEX 6 FANOUTS 0
-		11: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a4~porta_address_reg7	LIT INDEX 7 FANOUTS 0
-		12: [OBSERVABLEPORTAREREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a4~porta_re_reg	LIT INDEX 0 FANOUTS 0
+		0: [PORTADATAOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|q_a[4]	LIT INDEX 0 FANOUTS 2
+		1: [OBSERVABLEPORTAWEREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a4~porta_we_reg	LIT INDEX 0 FANOUTS 0
+		2: [OBSERVABLEPORTADATAINREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a4~porta_datain_reg0	LIT INDEX 0 FANOUTS 0
+		3: [OBSERVABLEPORTAMEMORYREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a4~porta_memory_reg0	LIT INDEX 0 FANOUTS 0
+		4: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a4~porta_address_reg0	LIT INDEX 0 FANOUTS 0
+		5: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a4~porta_address_reg1	LIT INDEX 1 FANOUTS 0
+		6: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a4~porta_address_reg2	LIT INDEX 2 FANOUTS 0
+		7: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a4~porta_address_reg3	LIT INDEX 3 FANOUTS 0
+		8: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a4~porta_address_reg4	LIT INDEX 4 FANOUTS 0
+		9: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a4~porta_address_reg5	LIT INDEX 5 FANOUTS 0
+		10: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a4~porta_address_reg6	LIT INDEX 6 FANOUTS 0
+		11: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a4~porta_address_reg7	LIT INDEX 7 FANOUTS 0
+		12: [OBSERVABLEPORTAREREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a4~porta_re_reg	LIT INDEX 0 FANOUTS 0
 
 	PARAMETER LIST:
 		operation_mode                 = single_port
 		ram_block_type                 = auto
-		logical_ram_name               = lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ALTSYNCRAM
-		init_file                      = RAM.mif
+		logical_ram_name               = lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ALTSYNCRAM
+		init_file                      = testr1.mif
 		init_file_layout               = port_a
 		data_interleave_width_in_bits  = 1
 		data_interleave_offset_in_bits = 1
@@ -1869,7 +1869,7 @@ Chip Device Options:
 
 
 - ATOM ------------------------
-	ATOM_NAME: lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a3 -- UNIQUE
+	ATOM_NAME: lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a3 -- UNIQUE
 	Atom Hier Name: 
 	Atom Id: 38
 	Atom Type: cycloneiii_ram_block (WYSIWYG)
@@ -1899,25 +1899,25 @@ Chip Device Options:
 		21: [PORTAADDR]	  DFF8:inst18|S[6]	LIT INDEX 6	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		22: [PORTAADDR]	  DFF8:inst18|S[7]	LIT INDEX 7	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 	OUTPUTS (Int. Connections):
-		0: [PORTADATAOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|q_a[3]	LIT INDEX 0 FANOUTS 2
-		1: [OBSERVABLEPORTAWEREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a3~porta_we_reg	LIT INDEX 0 FANOUTS 0
-		2: [OBSERVABLEPORTADATAINREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a3~porta_datain_reg0	LIT INDEX 0 FANOUTS 0
-		3: [OBSERVABLEPORTAMEMORYREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a3~porta_memory_reg0	LIT INDEX 0 FANOUTS 0
-		4: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a3~porta_address_reg0	LIT INDEX 0 FANOUTS 0
-		5: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a3~porta_address_reg1	LIT INDEX 1 FANOUTS 0
-		6: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a3~porta_address_reg2	LIT INDEX 2 FANOUTS 0
-		7: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a3~porta_address_reg3	LIT INDEX 3 FANOUTS 0
-		8: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a3~porta_address_reg4	LIT INDEX 4 FANOUTS 0
-		9: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a3~porta_address_reg5	LIT INDEX 5 FANOUTS 0
-		10: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a3~porta_address_reg6	LIT INDEX 6 FANOUTS 0
-		11: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a3~porta_address_reg7	LIT INDEX 7 FANOUTS 0
-		12: [OBSERVABLEPORTAREREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a3~porta_re_reg	LIT INDEX 0 FANOUTS 0
+		0: [PORTADATAOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|q_a[3]	LIT INDEX 0 FANOUTS 2
+		1: [OBSERVABLEPORTAWEREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a3~porta_we_reg	LIT INDEX 0 FANOUTS 0
+		2: [OBSERVABLEPORTADATAINREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a3~porta_datain_reg0	LIT INDEX 0 FANOUTS 0
+		3: [OBSERVABLEPORTAMEMORYREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a3~porta_memory_reg0	LIT INDEX 0 FANOUTS 0
+		4: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a3~porta_address_reg0	LIT INDEX 0 FANOUTS 0
+		5: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a3~porta_address_reg1	LIT INDEX 1 FANOUTS 0
+		6: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a3~porta_address_reg2	LIT INDEX 2 FANOUTS 0
+		7: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a3~porta_address_reg3	LIT INDEX 3 FANOUTS 0
+		8: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a3~porta_address_reg4	LIT INDEX 4 FANOUTS 0
+		9: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a3~porta_address_reg5	LIT INDEX 5 FANOUTS 0
+		10: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a3~porta_address_reg6	LIT INDEX 6 FANOUTS 0
+		11: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a3~porta_address_reg7	LIT INDEX 7 FANOUTS 0
+		12: [OBSERVABLEPORTAREREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a3~porta_re_reg	LIT INDEX 0 FANOUTS 0
 
 	PARAMETER LIST:
 		operation_mode                 = single_port
 		ram_block_type                 = auto
-		logical_ram_name               = lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ALTSYNCRAM
-		init_file                      = RAM.mif
+		logical_ram_name               = lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ALTSYNCRAM
+		init_file                      = testr1.mif
 		init_file_layout               = port_a
 		data_interleave_width_in_bits  = 1
 		data_interleave_offset_in_bits = 1
@@ -1935,7 +1935,7 @@ Chip Device Options:
 
 
 - ATOM ------------------------
-	ATOM_NAME: lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a2 -- UNIQUE
+	ATOM_NAME: lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a2 -- UNIQUE
 	Atom Hier Name: 
 	Atom Id: 39
 	Atom Type: cycloneiii_ram_block (WYSIWYG)
@@ -1965,25 +1965,25 @@ Chip Device Options:
 		21: [PORTAADDR]	  DFF8:inst18|S[6]	LIT INDEX 6	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		22: [PORTAADDR]	  DFF8:inst18|S[7]	LIT INDEX 7	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 	OUTPUTS (Int. Connections):
-		0: [PORTADATAOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|q_a[2]	LIT INDEX 0 FANOUTS 2
-		1: [OBSERVABLEPORTAWEREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a2~porta_we_reg	LIT INDEX 0 FANOUTS 0
-		2: [OBSERVABLEPORTADATAINREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a2~porta_datain_reg0	LIT INDEX 0 FANOUTS 0
-		3: [OBSERVABLEPORTAMEMORYREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a2~porta_memory_reg0	LIT INDEX 0 FANOUTS 0
-		4: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a2~porta_address_reg0	LIT INDEX 0 FANOUTS 0
-		5: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a2~porta_address_reg1	LIT INDEX 1 FANOUTS 0
-		6: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a2~porta_address_reg2	LIT INDEX 2 FANOUTS 0
-		7: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a2~porta_address_reg3	LIT INDEX 3 FANOUTS 0
-		8: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a2~porta_address_reg4	LIT INDEX 4 FANOUTS 0
-		9: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a2~porta_address_reg5	LIT INDEX 5 FANOUTS 0
-		10: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a2~porta_address_reg6	LIT INDEX 6 FANOUTS 0
-		11: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a2~porta_address_reg7	LIT INDEX 7 FANOUTS 0
-		12: [OBSERVABLEPORTAREREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a2~porta_re_reg	LIT INDEX 0 FANOUTS 0
+		0: [PORTADATAOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|q_a[2]	LIT INDEX 0 FANOUTS 2
+		1: [OBSERVABLEPORTAWEREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a2~porta_we_reg	LIT INDEX 0 FANOUTS 0
+		2: [OBSERVABLEPORTADATAINREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a2~porta_datain_reg0	LIT INDEX 0 FANOUTS 0
+		3: [OBSERVABLEPORTAMEMORYREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a2~porta_memory_reg0	LIT INDEX 0 FANOUTS 0
+		4: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a2~porta_address_reg0	LIT INDEX 0 FANOUTS 0
+		5: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a2~porta_address_reg1	LIT INDEX 1 FANOUTS 0
+		6: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a2~porta_address_reg2	LIT INDEX 2 FANOUTS 0
+		7: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a2~porta_address_reg3	LIT INDEX 3 FANOUTS 0
+		8: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a2~porta_address_reg4	LIT INDEX 4 FANOUTS 0
+		9: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a2~porta_address_reg5	LIT INDEX 5 FANOUTS 0
+		10: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a2~porta_address_reg6	LIT INDEX 6 FANOUTS 0
+		11: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a2~porta_address_reg7	LIT INDEX 7 FANOUTS 0
+		12: [OBSERVABLEPORTAREREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a2~porta_re_reg	LIT INDEX 0 FANOUTS 0
 
 	PARAMETER LIST:
 		operation_mode                 = single_port
 		ram_block_type                 = auto
-		logical_ram_name               = lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ALTSYNCRAM
-		init_file                      = RAM.mif
+		logical_ram_name               = lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ALTSYNCRAM
+		init_file                      = testr1.mif
 		init_file_layout               = port_a
 		data_interleave_width_in_bits  = 1
 		data_interleave_offset_in_bits = 1
@@ -2001,7 +2001,7 @@ Chip Device Options:
 
 
 - ATOM ------------------------
-	ATOM_NAME: lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a1 -- UNIQUE
+	ATOM_NAME: lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a1 -- UNIQUE
 	Atom Hier Name: 
 	Atom Id: 40
 	Atom Type: cycloneiii_ram_block (WYSIWYG)
@@ -2031,25 +2031,25 @@ Chip Device Options:
 		21: [PORTAADDR]	  DFF8:inst18|S[6]	LIT INDEX 6	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		22: [PORTAADDR]	  DFF8:inst18|S[7]	LIT INDEX 7	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 	OUTPUTS (Int. Connections):
-		0: [PORTADATAOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|q_a[1]	LIT INDEX 0 FANOUTS 2
-		1: [OBSERVABLEPORTAWEREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a1~porta_we_reg	LIT INDEX 0 FANOUTS 0
-		2: [OBSERVABLEPORTADATAINREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a1~porta_datain_reg0	LIT INDEX 0 FANOUTS 0
-		3: [OBSERVABLEPORTAMEMORYREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a1~porta_memory_reg0	LIT INDEX 0 FANOUTS 0
-		4: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a1~porta_address_reg0	LIT INDEX 0 FANOUTS 0
-		5: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a1~porta_address_reg1	LIT INDEX 1 FANOUTS 0
-		6: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a1~porta_address_reg2	LIT INDEX 2 FANOUTS 0
-		7: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a1~porta_address_reg3	LIT INDEX 3 FANOUTS 0
-		8: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a1~porta_address_reg4	LIT INDEX 4 FANOUTS 0
-		9: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a1~porta_address_reg5	LIT INDEX 5 FANOUTS 0
-		10: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a1~porta_address_reg6	LIT INDEX 6 FANOUTS 0
-		11: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a1~porta_address_reg7	LIT INDEX 7 FANOUTS 0
-		12: [OBSERVABLEPORTAREREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a1~porta_re_reg	LIT INDEX 0 FANOUTS 0
+		0: [PORTADATAOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|q_a[1]	LIT INDEX 0 FANOUTS 2
+		1: [OBSERVABLEPORTAWEREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a1~porta_we_reg	LIT INDEX 0 FANOUTS 0
+		2: [OBSERVABLEPORTADATAINREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a1~porta_datain_reg0	LIT INDEX 0 FANOUTS 0
+		3: [OBSERVABLEPORTAMEMORYREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a1~porta_memory_reg0	LIT INDEX 0 FANOUTS 0
+		4: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a1~porta_address_reg0	LIT INDEX 0 FANOUTS 0
+		5: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a1~porta_address_reg1	LIT INDEX 1 FANOUTS 0
+		6: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a1~porta_address_reg2	LIT INDEX 2 FANOUTS 0
+		7: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a1~porta_address_reg3	LIT INDEX 3 FANOUTS 0
+		8: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a1~porta_address_reg4	LIT INDEX 4 FANOUTS 0
+		9: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a1~porta_address_reg5	LIT INDEX 5 FANOUTS 0
+		10: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a1~porta_address_reg6	LIT INDEX 6 FANOUTS 0
+		11: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a1~porta_address_reg7	LIT INDEX 7 FANOUTS 0
+		12: [OBSERVABLEPORTAREREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a1~porta_re_reg	LIT INDEX 0 FANOUTS 0
 
 	PARAMETER LIST:
 		operation_mode                 = single_port
 		ram_block_type                 = auto
-		logical_ram_name               = lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ALTSYNCRAM
-		init_file                      = RAM.mif
+		logical_ram_name               = lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ALTSYNCRAM
+		init_file                      = testr1.mif
 		init_file_layout               = port_a
 		data_interleave_width_in_bits  = 1
 		data_interleave_offset_in_bits = 1
@@ -2067,7 +2067,7 @@ Chip Device Options:
 
 
 - ATOM ------------------------
-	ATOM_NAME: lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a0 -- UNIQUE
+	ATOM_NAME: lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a0 -- UNIQUE
 	Atom Hier Name: 
 	Atom Id: 41
 	Atom Type: cycloneiii_ram_block (WYSIWYG)
@@ -2097,25 +2097,25 @@ Chip Device Options:
 		21: [PORTAADDR]	  DFF8:inst18|S[6]	LIT INDEX 6	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		22: [PORTAADDR]	  DFF8:inst18|S[7]	LIT INDEX 7	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 	OUTPUTS (Int. Connections):
-		0: [PORTADATAOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|q_a[0]	LIT INDEX 0 FANOUTS 2
-		1: [OBSERVABLEPORTAWEREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a0~porta_we_reg	LIT INDEX 0 FANOUTS 0
-		2: [OBSERVABLEPORTADATAINREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a0~porta_datain_reg0	LIT INDEX 0 FANOUTS 0
-		3: [OBSERVABLEPORTAMEMORYREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a0~porta_memory_reg0	LIT INDEX 0 FANOUTS 0
-		4: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a0~porta_address_reg0	LIT INDEX 0 FANOUTS 0
-		5: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a0~porta_address_reg1	LIT INDEX 1 FANOUTS 0
-		6: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a0~porta_address_reg2	LIT INDEX 2 FANOUTS 0
-		7: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a0~porta_address_reg3	LIT INDEX 3 FANOUTS 0
-		8: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a0~porta_address_reg4	LIT INDEX 4 FANOUTS 0
-		9: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a0~porta_address_reg5	LIT INDEX 5 FANOUTS 0
-		10: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a0~porta_address_reg6	LIT INDEX 6 FANOUTS 0
-		11: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a0~porta_address_reg7	LIT INDEX 7 FANOUTS 0
-		12: [OBSERVABLEPORTAREREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a0~porta_re_reg	LIT INDEX 0 FANOUTS 0
+		0: [PORTADATAOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|q_a[0]	LIT INDEX 0 FANOUTS 2
+		1: [OBSERVABLEPORTAWEREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a0~porta_we_reg	LIT INDEX 0 FANOUTS 0
+		2: [OBSERVABLEPORTADATAINREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a0~porta_datain_reg0	LIT INDEX 0 FANOUTS 0
+		3: [OBSERVABLEPORTAMEMORYREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a0~porta_memory_reg0	LIT INDEX 0 FANOUTS 0
+		4: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a0~porta_address_reg0	LIT INDEX 0 FANOUTS 0
+		5: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a0~porta_address_reg1	LIT INDEX 1 FANOUTS 0
+		6: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a0~porta_address_reg2	LIT INDEX 2 FANOUTS 0
+		7: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a0~porta_address_reg3	LIT INDEX 3 FANOUTS 0
+		8: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a0~porta_address_reg4	LIT INDEX 4 FANOUTS 0
+		9: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a0~porta_address_reg5	LIT INDEX 5 FANOUTS 0
+		10: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a0~porta_address_reg6	LIT INDEX 6 FANOUTS 0
+		11: [OBSERVABLEPORTAADDRESSREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a0~porta_address_reg7	LIT INDEX 7 FANOUTS 0
+		12: [OBSERVABLEPORTAREREGOUT]	lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a0~porta_re_reg	LIT INDEX 0 FANOUTS 0
 
 	PARAMETER LIST:
 		operation_mode                 = single_port
 		ram_block_type                 = auto
-		logical_ram_name               = lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ALTSYNCRAM
-		init_file                      = RAM.mif
+		logical_ram_name               = lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ALTSYNCRAM
+		init_file                      = testr1.mif
 		init_file_layout               = port_a
 		data_interleave_width_in_bits  = 1
 		data_interleave_offset_in_bits = 1
@@ -4448,7 +4448,7 @@ Chip Device Options:
 	Atom Type: cycloneiii_lcell_comb
 
 	INPUTS (Driven By):
-		0: [DATAA]	  lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|q_a[7]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		0: [DATAA]	  lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|q_a[7]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		1: [DATAB]	  lpm_counter0:inst6|lpm_counter:lpm_counter_component|cntr_k5j:auto_generated|counter_reg_bit[7]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		2: [DATAC]	  lpm_rom0:inst12|altsyncram:altsyncram_component|altsyncram_ej91:auto_generated|q_a[10]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		3: [DATAD]	  lpm_rom0:inst12|altsyncram:altsyncram_component|altsyncram_ej91:auto_generated|q_a[6]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
@@ -4752,7 +4752,7 @@ Chip Device Options:
 	Atom Type: cycloneiii_lcell_comb
 
 	INPUTS (Driven By):
-		0: [DATAA]	  lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|q_a[6]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		0: [DATAA]	  lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|q_a[6]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		1: [DATAB]	  lpm_counter0:inst6|lpm_counter:lpm_counter_component|cntr_k5j:auto_generated|counter_reg_bit[6]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		2: [DATAC]	  lpm_rom0:inst12|altsyncram:altsyncram_component|altsyncram_ej91:auto_generated|q_a[10]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		3: [DATAD]	  lpm_rom0:inst12|altsyncram:altsyncram_component|altsyncram_ej91:auto_generated|q_a[6]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
@@ -4972,7 +4972,7 @@ Chip Device Options:
 	Atom Type: cycloneiii_lcell_comb
 
 	INPUTS (Driven By):
-		0: [DATAA]	  lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|q_a[5]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		0: [DATAA]	  lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|q_a[5]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		1: [DATAB]	  lpm_counter0:inst6|lpm_counter:lpm_counter_component|cntr_k5j:auto_generated|counter_reg_bit[5]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		2: [DATAC]	  lpm_rom0:inst12|altsyncram:altsyncram_component|altsyncram_ej91:auto_generated|q_a[10]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		3: [DATAD]	  lpm_rom0:inst12|altsyncram:altsyncram_component|altsyncram_ej91:auto_generated|q_a[6]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
@@ -5192,7 +5192,7 @@ Chip Device Options:
 	Atom Type: cycloneiii_lcell_comb
 
 	INPUTS (Driven By):
-		0: [DATAA]	  lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|q_a[4]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		0: [DATAA]	  lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|q_a[4]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		1: [DATAB]	  lpm_counter0:inst6|lpm_counter:lpm_counter_component|cntr_k5j:auto_generated|counter_reg_bit[4]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		2: [DATAC]	  lpm_rom0:inst12|altsyncram:altsyncram_component|altsyncram_ej91:auto_generated|q_a[10]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		3: [DATAD]	  lpm_rom0:inst12|altsyncram:altsyncram_component|altsyncram_ej91:auto_generated|q_a[6]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
@@ -5527,7 +5527,7 @@ Chip Device Options:
 	Atom Type: cycloneiii_lcell_comb
 
 	INPUTS (Driven By):
-		0: [DATAA]	  lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|q_a[3]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		0: [DATAA]	  lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|q_a[3]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		1: [DATAB]	  lpm_counter0:inst6|lpm_counter:lpm_counter_component|cntr_k5j:auto_generated|counter_reg_bit[3]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		2: [DATAC]	  lpm_rom0:inst12|altsyncram:altsyncram_component|altsyncram_ej91:auto_generated|q_a[10]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		3: [DATAD]	  lpm_rom0:inst12|altsyncram:altsyncram_component|altsyncram_ej91:auto_generated|q_a[6]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
@@ -5726,7 +5726,7 @@ Chip Device Options:
 	Atom Type: cycloneiii_lcell_comb
 
 	INPUTS (Driven By):
-		0: [DATAA]	  lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|q_a[2]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		0: [DATAA]	  lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|q_a[2]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		1: [DATAB]	  lpm_counter0:inst6|lpm_counter:lpm_counter_component|cntr_k5j:auto_generated|counter_reg_bit[2]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		2: [DATAC]	  lpm_rom0:inst12|altsyncram:altsyncram_component|altsyncram_ej91:auto_generated|q_a[10]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		3: [DATAD]	  lpm_rom0:inst12|altsyncram:altsyncram_component|altsyncram_ej91:auto_generated|q_a[6]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
@@ -5925,7 +5925,7 @@ Chip Device Options:
 	Atom Type: cycloneiii_lcell_comb
 
 	INPUTS (Driven By):
-		0: [DATAA]	  lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|q_a[1]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		0: [DATAA]	  lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|q_a[1]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		1: [DATAB]	  lpm_counter0:inst6|lpm_counter:lpm_counter_component|cntr_k5j:auto_generated|counter_reg_bit[1]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		2: [DATAC]	  lpm_rom0:inst12|altsyncram:altsyncram_component|altsyncram_ej91:auto_generated|q_a[10]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		3: [DATAD]	  lpm_rom0:inst12|altsyncram:altsyncram_component|altsyncram_ej91:auto_generated|q_a[6]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
@@ -6124,7 +6124,7 @@ Chip Device Options:
 	Atom Type: cycloneiii_lcell_comb
 
 	INPUTS (Driven By):
-		0: [DATAA]	  lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|q_a[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		0: [DATAA]	  lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|q_a[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		1: [DATAB]	  lpm_counter0:inst6|lpm_counter:lpm_counter_component|cntr_k5j:auto_generated|counter_reg_bit[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		2: [DATAC]	  lpm_rom0:inst12|altsyncram:altsyncram_component|altsyncram_ej91:auto_generated|q_a[10]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		3: [DATAD]	  lpm_rom0:inst12|altsyncram:altsyncram_component|altsyncram_ej91:auto_generated|q_a[6]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
@@ -9990,7 +9990,7 @@ Chip Device Options:
 	Atom Type: cycloneiii_io_obuf
 
 	INPUTS (Driven By):
-		0: [I]	  lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|q_a[7]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		0: [I]	  lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|q_a[7]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		1: NO ITERM
 	OUTPUTS (Int. Connections):
 		0: [O]	OUT_RAM[7]~output	LIT INDEX 0 FANOUTS 1
@@ -10034,7 +10034,7 @@ Chip Device Options:
 	Atom Type: cycloneiii_io_obuf
 
 	INPUTS (Driven By):
-		0: [I]	  lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|q_a[6]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		0: [I]	  lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|q_a[6]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		1: NO ITERM
 	OUTPUTS (Int. Connections):
 		0: [O]	OUT_RAM[6]~output	LIT INDEX 0 FANOUTS 1
@@ -10078,7 +10078,7 @@ Chip Device Options:
 	Atom Type: cycloneiii_io_obuf
 
 	INPUTS (Driven By):
-		0: [I]	  lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|q_a[5]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		0: [I]	  lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|q_a[5]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		1: NO ITERM
 	OUTPUTS (Int. Connections):
 		0: [O]	OUT_RAM[5]~output	LIT INDEX 0 FANOUTS 1
@@ -10122,7 +10122,7 @@ Chip Device Options:
 	Atom Type: cycloneiii_io_obuf
 
 	INPUTS (Driven By):
-		0: [I]	  lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|q_a[4]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		0: [I]	  lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|q_a[4]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		1: NO ITERM
 	OUTPUTS (Int. Connections):
 		0: [O]	OUT_RAM[4]~output	LIT INDEX 0 FANOUTS 1
@@ -10166,7 +10166,7 @@ Chip Device Options:
 	Atom Type: cycloneiii_io_obuf
 
 	INPUTS (Driven By):
-		0: [I]	  lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|q_a[3]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		0: [I]	  lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|q_a[3]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		1: NO ITERM
 	OUTPUTS (Int. Connections):
 		0: [O]	OUT_RAM[3]~output	LIT INDEX 0 FANOUTS 1
@@ -10210,7 +10210,7 @@ Chip Device Options:
 	Atom Type: cycloneiii_io_obuf
 
 	INPUTS (Driven By):
-		0: [I]	  lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|q_a[2]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		0: [I]	  lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|q_a[2]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		1: NO ITERM
 	OUTPUTS (Int. Connections):
 		0: [O]	OUT_RAM[2]~output	LIT INDEX 0 FANOUTS 1
@@ -10254,7 +10254,7 @@ Chip Device Options:
 	Atom Type: cycloneiii_io_obuf
 
 	INPUTS (Driven By):
-		0: [I]	  lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|q_a[1]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		0: [I]	  lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|q_a[1]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		1: NO ITERM
 	OUTPUTS (Int. Connections):
 		0: [O]	OUT_RAM[1]~output	LIT INDEX 0 FANOUTS 1
@@ -10298,7 +10298,7 @@ Chip Device Options:
 	Atom Type: cycloneiii_io_obuf
 
 	INPUTS (Driven By):
-		0: [I]	  lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|q_a[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		0: [I]	  lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|q_a[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		1: NO ITERM
 	OUTPUTS (Int. Connections):
 		0: [O]	OUT_RAM[0]~output	LIT INDEX 0 FANOUTS 1

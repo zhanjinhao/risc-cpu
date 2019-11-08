@@ -3,7 +3,7 @@ USE IEEE.STD_LOGIC_1164.ALL;
 USE IEEE.STD_LOGIC_UNSIGNED.ALL;
 ENTITY controler IS
     PORT (
-          CLK: IN STD_LOGIC;	
+          CLK: IN STD_LOGIC;
           RST: IN STD_LOGIC;
           IDR: IN STD_LOGIC_VECTOR(4 DOWNTO 0);   -- current micro address
           IRD: IN STD_LOGIC_VECTOR(7 DOWNTO 4);   -- current instruction

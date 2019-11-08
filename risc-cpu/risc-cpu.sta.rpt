@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for risc-cpu
-Wed Nov 06 21:16:53 2019
+Fri Nov 08 11:43:32 2019
 Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version
 
 
@@ -181,9 +181,9 @@ No paths to report.
 +--------+--------------+----------------+-------+------------------+--------------------------------+------------+------------------------------------------------------------------------------------------------------------------+
 ; Slack  ; Actual Width ; Required Width ; CCPP  ; Type             ; Clock                          ; Clock Edge ; Target                                                                                                           ;
 +--------+--------------+----------------+-------+------------------+--------------------------------+------------+------------------------------------------------------------------------------------------------------------------+
-; -3.201 ; 1.000        ; 4.201          ; 0.000 ; Min Period       ; sequence-generator:inst7|inst  ; Rise       ; lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a0~porta_address_reg0 ;
-; -3.201 ; 1.000        ; 4.201          ; 0.000 ; Min Period       ; sequence-generator:inst7|inst  ; Rise       ; lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a0~porta_datain_reg0  ;
-; -3.201 ; 1.000        ; 4.201          ; 0.000 ; Min Period       ; sequence-generator:inst7|inst  ; Rise       ; lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a0~porta_we_reg       ;
+; -3.201 ; 1.000        ; 4.201          ; 0.000 ; Min Period       ; sequence-generator:inst7|inst  ; Rise       ; lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a0~porta_address_reg0 ;
+; -3.201 ; 1.000        ; 4.201          ; 0.000 ; Min Period       ; sequence-generator:inst7|inst  ; Rise       ; lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a0~porta_datain_reg0  ;
+; -3.201 ; 1.000        ; 4.201          ; 0.000 ; Min Period       ; sequence-generator:inst7|inst  ; Rise       ; lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a0~porta_we_reg       ;
 ; -3.201 ; 1.000        ; 4.201          ; 0.000 ; Min Period       ; sequence-generator:inst7|inst  ; Rise       ; lpm_rom0:inst12|altsyncram:altsyncram_component|altsyncram_ej91:auto_generated|ram_block1a0~porta_address_reg0   ;
 ; -3.201 ; 1.000        ; 4.201          ; 0.000 ; Min Period       ; sequence-generator:inst7|inst  ; Rise       ; lpm_rom0:inst12|altsyncram:altsyncram_component|altsyncram_ej91:auto_generated|ram_block1a5~porta_address_reg0   ;
 ; -3.000 ; 1.000        ; 4.000          ; 0.000 ; Port Rate        ; CLK                            ; Rise       ; CLK                                                                                                              ;
@@ -764,9 +764,9 @@ No paths to report.
 +--------+--------------+----------------+-------+------------------+--------------------------------+------------+------------------------------------------------------------------------------------------------------------------+
 ; Slack  ; Actual Width ; Required Width ; CCPP  ; Type             ; Clock                          ; Clock Edge ; Target                                                                                                           ;
 +--------+--------------+----------------+-------+------------------+--------------------------------+------------+------------------------------------------------------------------------------------------------------------------+
-; -3.201 ; 1.000        ; 4.201          ; 0.000 ; Min Period       ; sequence-generator:inst7|inst  ; Rise       ; lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a0~porta_address_reg0 ;
-; -3.201 ; 1.000        ; 4.201          ; 0.000 ; Min Period       ; sequence-generator:inst7|inst  ; Rise       ; lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a0~porta_datain_reg0  ;
-; -3.201 ; 1.000        ; 4.201          ; 0.000 ; Min Period       ; sequence-generator:inst7|inst  ; Rise       ; lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a0~porta_we_reg       ;
+; -3.201 ; 1.000        ; 4.201          ; 0.000 ; Min Period       ; sequence-generator:inst7|inst  ; Rise       ; lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a0~porta_address_reg0 ;
+; -3.201 ; 1.000        ; 4.201          ; 0.000 ; Min Period       ; sequence-generator:inst7|inst  ; Rise       ; lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a0~porta_datain_reg0  ;
+; -3.201 ; 1.000        ; 4.201          ; 0.000 ; Min Period       ; sequence-generator:inst7|inst  ; Rise       ; lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a0~porta_we_reg       ;
 ; -3.201 ; 1.000        ; 4.201          ; 0.000 ; Min Period       ; sequence-generator:inst7|inst  ; Rise       ; lpm_rom0:inst12|altsyncram:altsyncram_component|altsyncram_ej91:auto_generated|ram_block1a0~porta_address_reg0   ;
 ; -3.201 ; 1.000        ; 4.201          ; 0.000 ; Min Period       ; sequence-generator:inst7|inst  ; Rise       ; lpm_rom0:inst12|altsyncram:altsyncram_component|altsyncram_ej91:auto_generated|ram_block1a5~porta_address_reg0   ;
 ; -3.000 ; 1.000        ; 4.000          ; 0.000 ; Port Rate        ; CLK                            ; Rise       ; CLK                                                                                                              ;
@@ -1372,9 +1372,9 @@ No paths to report.
 ; -1.000 ; 1.000        ; 2.000          ; 0.000 ; Min Period      ; sequence-generator:inst7|inst3 ; Rise       ; lpm_counter0:inst6|lpm_counter:lpm_counter_component|cntr_k5j:auto_generated|counter_reg_bit[5]                  ;
 ; -1.000 ; 1.000        ; 2.000          ; 0.000 ; Min Period      ; sequence-generator:inst7|inst3 ; Rise       ; lpm_counter0:inst6|lpm_counter:lpm_counter_component|cntr_k5j:auto_generated|counter_reg_bit[6]                  ;
 ; -1.000 ; 1.000        ; 2.000          ; 0.000 ; Min Period      ; sequence-generator:inst7|inst3 ; Rise       ; lpm_counter0:inst6|lpm_counter:lpm_counter_component|cntr_k5j:auto_generated|counter_reg_bit[7]                  ;
-; -1.000 ; 1.000        ; 2.000          ; 0.000 ; Min Period      ; sequence-generator:inst7|inst  ; Rise       ; lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a0~porta_address_reg0 ;
-; -1.000 ; 1.000        ; 2.000          ; 0.000 ; Min Period      ; sequence-generator:inst7|inst  ; Rise       ; lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a0~porta_datain_reg0  ;
-; -1.000 ; 1.000        ; 2.000          ; 0.000 ; Min Period      ; sequence-generator:inst7|inst  ; Rise       ; lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a0~porta_we_reg       ;
+; -1.000 ; 1.000        ; 2.000          ; 0.000 ; Min Period      ; sequence-generator:inst7|inst  ; Rise       ; lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a0~porta_address_reg0 ;
+; -1.000 ; 1.000        ; 2.000          ; 0.000 ; Min Period      ; sequence-generator:inst7|inst  ; Rise       ; lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a0~porta_datain_reg0  ;
+; -1.000 ; 1.000        ; 2.000          ; 0.000 ; Min Period      ; sequence-generator:inst7|inst  ; Rise       ; lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a0~porta_we_reg       ;
 ; -1.000 ; 1.000        ; 2.000          ; 0.000 ; Min Period      ; sequence-generator:inst7|inst  ; Rise       ; lpm_rom0:inst12|altsyncram:altsyncram_component|altsyncram_ej91:auto_generated|ram_block1a0~porta_address_reg0   ;
 ; -1.000 ; 1.000        ; 2.000          ; 0.000 ; Min Period      ; sequence-generator:inst7|inst  ; Rise       ; lpm_rom0:inst12|altsyncram:altsyncram_component|altsyncram_ej91:auto_generated|ram_block1a5~porta_address_reg0   ;
 ; -1.000 ; 1.000        ; 2.000          ; 0.000 ; Min Period      ; sequence-generator:inst7|inst1 ; Rise       ; register-heap:inst16|DFF8:inst12|S[0]                                                                            ;
@@ -1427,9 +1427,9 @@ No paths to report.
 ; 0.101  ; 0.023        ; 0.000          ; 0.078 ; Low Pulse Width ; CLK                            ; Rise       ; inst7|inst5~clkctrl|inclk[0]                                                                                     ;
 ; 0.101  ; 0.023        ; 0.000          ; 0.078 ; Low Pulse Width ; CLK                            ; Rise       ; inst7|inst5~clkctrl|outclk                                                                                       ;
 ; 0.118  ; 0.118        ; 0.000          ; 0.000 ; Low Pulse Width ; CLK                            ; Rise       ; CLK~input|o                                                                                                      ;
-; 0.139  ; 0.279        ; 0.230          ; 0.090 ; Low Pulse Width ; sequence-generator:inst7|inst  ; Rise       ; lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a0~porta_address_reg0 ;
-; 0.139  ; 0.280        ; 0.230          ; 0.089 ; Low Pulse Width ; sequence-generator:inst7|inst  ; Rise       ; lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a0~porta_datain_reg0  ;
-; 0.139  ; 0.279        ; 0.230          ; 0.090 ; Low Pulse Width ; sequence-generator:inst7|inst  ; Rise       ; lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_srh1:auto_generated|ram_block1a0~porta_we_reg       ;
+; 0.139  ; 0.279        ; 0.230          ; 0.090 ; Low Pulse Width ; sequence-generator:inst7|inst  ; Rise       ; lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a0~porta_address_reg0 ;
+; 0.139  ; 0.280        ; 0.230          ; 0.089 ; Low Pulse Width ; sequence-generator:inst7|inst  ; Rise       ; lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a0~porta_datain_reg0  ;
+; 0.139  ; 0.279        ; 0.230          ; 0.090 ; Low Pulse Width ; sequence-generator:inst7|inst  ; Rise       ; lpm_ram_dq0:inst3|altsyncram:altsyncram_component|altsyncram_v4i1:auto_generated|ram_block1a0~porta_we_reg       ;
 ; 0.139  ; 0.279        ; 0.230          ; 0.090 ; Low Pulse Width ; sequence-generator:inst7|inst  ; Rise       ; lpm_rom0:inst12|altsyncram:altsyncram_component|altsyncram_ej91:auto_generated|ram_block1a0~porta_address_reg0   ;
 ; 0.163  ; 0.251        ; 0.184          ; 0.096 ; Low Pulse Width ; sequence-generator:inst7|inst3 ; Rise       ; lpm_counter0:inst6|lpm_counter:lpm_counter_component|cntr_k5j:auto_generated|counter_reg_bit[0]                  ;
 ; 0.163  ; 0.251        ; 0.184          ; 0.096 ; Low Pulse Width ; sequence-generator:inst7|inst3 ; Rise       ; lpm_counter0:inst6|lpm_counter:lpm_counter_component|cntr_k5j:auto_generated|counter_reg_bit[1]                  ;
@@ -2723,7 +2723,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design.
 Info: *******************************************************************
 Info: Running Quartus II TimeQuest Timing Analyzer
     Info: Version 9.0 Build 132 02/25/2009 SJ Full Version
-    Info: Processing started: Wed Nov 06 21:16:50 2019
+    Info: Processing started: Fri Nov 08 11:43:29 2019
 Info: Command: quartus_sta risc-cpu -c risc-cpu
 Info: qsta_default_script.tcl version: #3
 Warning: Ignored assignments for entity "risc-cpu" -- entity does not exist in design
@@ -2935,7 +2935,7 @@ Info: Design is not fully constrained for setup requirements
 Info: Design is not fully constrained for hold requirements
 Info: Quartus II TimeQuest Timing Analyzer was successful. 0 errors, 134 warnings
     Info: Peak virtual memory: 292 megabytes
-    Info: Processing ended: Wed Nov 06 21:16:53 2019
+    Info: Processing ended: Fri Nov 08 11:43:32 2019
     Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:03
 

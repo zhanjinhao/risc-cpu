@@ -1868,8 +1868,8 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/cpu.vwf")
 VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 {
 	ZOOM{
-		ZBEGIN = 0;
-		ZEND = 736668;
+		ZBEGIN = 126506;
+		ZEND = 729356;
 		NUMERATOR = 1040;
 		DENOMINATOR = 695854;
 		TOP_INDEX = 0;
@@ -1883,7 +1883,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 		INTERVAL_TYPE = HALF_GRID;
 	}
 	LINE{
-		SIGNAL = "STEP";
+		SIGNAL = "CLK";
 		INDEX = 0;
 		FORMAT = E;
 		SCALE = 1;
@@ -1891,16 +1891,8 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "CLK";
-		INDEX = 1;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
 		SIGNAL = "INPUT";
-		INDEX = 2;
+		INDEX = 1;
 		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1908,7 +1900,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "INPUT[7]";
-		INDEX = 3;
+		INDEX = 2;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1916,7 +1908,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "INPUT[6]";
-		INDEX = 4;
+		INDEX = 3;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1924,7 +1916,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "INPUT[5]";
-		INDEX = 5;
+		INDEX = 4;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1932,7 +1924,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "INPUT[4]";
-		INDEX = 6;
+		INDEX = 5;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1940,7 +1932,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "INPUT[3]";
-		INDEX = 7;
+		INDEX = 6;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1948,7 +1940,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "INPUT[2]";
-		INDEX = 8;
+		INDEX = 7;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1956,7 +1948,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "INPUT[1]";
-		INDEX = 9;
+		INDEX = 8;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1964,7 +1956,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "INPUT[0]";
-		INDEX = 10;
+		INDEX = 9;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1972,7 +1964,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_ALU";
-		INDEX = 11;
+		INDEX = 10;
 		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1980,7 +1972,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_ALU[7]";
-		INDEX = 12;
+		INDEX = 11;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1988,7 +1980,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_ALU[6]";
-		INDEX = 13;
+		INDEX = 12;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1996,7 +1988,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_ALU[5]";
-		INDEX = 14;
+		INDEX = 13;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2004,7 +1996,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_ALU[4]";
-		INDEX = 15;
+		INDEX = 14;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2012,7 +2004,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_ALU[3]";
-		INDEX = 16;
+		INDEX = 15;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2020,7 +2012,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_ALU[2]";
-		INDEX = 17;
+		INDEX = 16;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2028,7 +2020,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_ALU[1]";
-		INDEX = 18;
+		INDEX = 17;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2036,7 +2028,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_ALU[0]";
-		INDEX = 19;
+		INDEX = 18;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2044,7 +2036,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_AR";
-		INDEX = 20;
+		INDEX = 19;
 		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2052,7 +2044,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_AR[7]";
-		INDEX = 21;
+		INDEX = 20;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2060,7 +2052,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_AR[6]";
-		INDEX = 22;
+		INDEX = 21;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2068,7 +2060,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_AR[5]";
-		INDEX = 23;
+		INDEX = 22;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2076,7 +2068,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_AR[4]";
-		INDEX = 24;
+		INDEX = 23;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2084,7 +2076,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_AR[3]";
-		INDEX = 25;
+		INDEX = 24;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2092,7 +2084,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_AR[2]";
-		INDEX = 26;
+		INDEX = 25;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2100,7 +2092,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_AR[1]";
-		INDEX = 27;
+		INDEX = 26;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2108,7 +2100,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_AR[0]";
-		INDEX = 28;
+		INDEX = 27;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2116,7 +2108,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_DFF0";
-		INDEX = 29;
+		INDEX = 28;
 		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2124,7 +2116,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_DFF0[7]";
-		INDEX = 30;
+		INDEX = 29;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2132,7 +2124,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_DFF0[6]";
-		INDEX = 31;
+		INDEX = 30;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2140,7 +2132,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_DFF0[5]";
-		INDEX = 32;
+		INDEX = 31;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2148,7 +2140,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_DFF0[4]";
-		INDEX = 33;
+		INDEX = 32;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2156,7 +2148,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_DFF0[3]";
-		INDEX = 34;
+		INDEX = 33;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2164,7 +2156,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_DFF0[2]";
-		INDEX = 35;
+		INDEX = 34;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2172,7 +2164,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_DFF0[1]";
-		INDEX = 36;
+		INDEX = 35;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2180,7 +2172,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_DFF0[0]";
-		INDEX = 37;
+		INDEX = 36;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2188,7 +2180,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_DFF1";
-		INDEX = 38;
+		INDEX = 37;
 		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2196,7 +2188,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_DFF1[7]";
-		INDEX = 39;
+		INDEX = 38;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2204,7 +2196,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_DFF1[6]";
-		INDEX = 40;
+		INDEX = 39;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2212,7 +2204,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_DFF1[5]";
-		INDEX = 41;
+		INDEX = 40;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2220,7 +2212,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_DFF1[4]";
-		INDEX = 42;
+		INDEX = 41;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2228,7 +2220,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_DFF1[3]";
-		INDEX = 43;
+		INDEX = 42;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2236,7 +2228,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_DFF1[2]";
-		INDEX = 44;
+		INDEX = 43;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2244,7 +2236,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_DFF1[1]";
-		INDEX = 45;
+		INDEX = 44;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2252,7 +2244,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_DFF1[0]";
-		INDEX = 46;
+		INDEX = 45;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2260,7 +2252,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_IR";
-		INDEX = 47;
+		INDEX = 46;
 		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2268,7 +2260,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_IR[7]";
-		INDEX = 48;
+		INDEX = 47;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2276,7 +2268,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_IR[6]";
-		INDEX = 49;
+		INDEX = 48;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2284,7 +2276,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_IR[5]";
-		INDEX = 50;
+		INDEX = 49;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2292,7 +2284,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_IR[4]";
-		INDEX = 51;
+		INDEX = 50;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2300,7 +2292,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_IR[3]";
-		INDEX = 52;
+		INDEX = 51;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2308,7 +2300,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_IR[2]";
-		INDEX = 53;
+		INDEX = 52;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2316,7 +2308,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_IR[1]";
-		INDEX = 54;
+		INDEX = 53;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2324,7 +2316,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_IR[0]";
-		INDEX = 55;
+		INDEX = 54;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2332,7 +2324,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_M";
-		INDEX = 56;
+		INDEX = 55;
 		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2340,7 +2332,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_M[22]";
-		INDEX = 57;
+		INDEX = 56;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2348,7 +2340,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_M[21]";
-		INDEX = 58;
+		INDEX = 57;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2356,7 +2348,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_M[20]";
-		INDEX = 59;
+		INDEX = 58;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2364,7 +2356,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_M[19]";
-		INDEX = 60;
+		INDEX = 59;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2372,7 +2364,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_M[18]";
-		INDEX = 61;
+		INDEX = 60;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2380,7 +2372,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_M[17]";
-		INDEX = 62;
+		INDEX = 61;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2388,7 +2380,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_M[16]";
-		INDEX = 63;
+		INDEX = 62;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2396,7 +2388,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_M[15]";
-		INDEX = 64;
+		INDEX = 63;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2404,7 +2396,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_M[14]";
-		INDEX = 65;
+		INDEX = 64;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2412,7 +2404,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_M[13]";
-		INDEX = 66;
+		INDEX = 65;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2420,7 +2412,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_M[12]";
-		INDEX = 67;
+		INDEX = 66;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2428,7 +2420,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_M[11]";
-		INDEX = 68;
+		INDEX = 67;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2436,7 +2428,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_M[10]";
-		INDEX = 69;
+		INDEX = 68;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2444,7 +2436,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_M[9]";
-		INDEX = 70;
+		INDEX = 69;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2452,7 +2444,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_M[8]";
-		INDEX = 71;
+		INDEX = 70;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2460,7 +2452,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_M[7]";
-		INDEX = 72;
+		INDEX = 71;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2468,7 +2460,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_M[6]";
-		INDEX = 73;
+		INDEX = 72;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2476,7 +2468,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_M[5]";
-		INDEX = 74;
+		INDEX = 73;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2484,7 +2476,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_M[4]";
-		INDEX = 75;
+		INDEX = 74;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2492,7 +2484,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_M[3]";
-		INDEX = 76;
+		INDEX = 75;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2500,7 +2492,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_M[2]";
-		INDEX = 77;
+		INDEX = 76;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2508,7 +2500,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_M[1]";
-		INDEX = 78;
+		INDEX = 77;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2516,7 +2508,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_M[0]";
-		INDEX = 79;
+		INDEX = 78;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2524,7 +2516,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_NMA";
-		INDEX = 80;
+		INDEX = 79;
 		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2532,7 +2524,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_NMA[4]";
-		INDEX = 81;
+		INDEX = 80;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2540,7 +2532,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_NMA[3]";
-		INDEX = 82;
+		INDEX = 81;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2548,7 +2540,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_NMA[2]";
-		INDEX = 83;
+		INDEX = 82;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2556,7 +2548,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_NMA[1]";
-		INDEX = 84;
+		INDEX = 83;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2564,7 +2556,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_NMA[0]";
-		INDEX = 85;
+		INDEX = 84;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2572,7 +2564,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_RAM";
-		INDEX = 86;
+		INDEX = 85;
 		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2580,7 +2572,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_RAM[7]";
-		INDEX = 87;
+		INDEX = 86;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2588,7 +2580,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_RAM[6]";
-		INDEX = 88;
+		INDEX = 87;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2596,7 +2588,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_RAM[5]";
-		INDEX = 89;
+		INDEX = 88;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2604,7 +2596,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_RAM[4]";
-		INDEX = 90;
+		INDEX = 89;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2612,7 +2604,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_RAM[3]";
-		INDEX = 91;
+		INDEX = 90;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2620,7 +2612,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_RAM[2]";
-		INDEX = 92;
+		INDEX = 91;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2628,7 +2620,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_RAM[1]";
-		INDEX = 93;
+		INDEX = 92;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2636,7 +2628,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_RAM[0]";
-		INDEX = 94;
+		INDEX = 93;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2644,7 +2636,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_T1";
-		INDEX = 95;
+		INDEX = 94;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2652,7 +2644,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_T2";
-		INDEX = 96;
+		INDEX = 95;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2660,7 +2652,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_T3";
-		INDEX = 97;
+		INDEX = 96;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2668,7 +2660,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUT_T4";
-		INDEX = 98;
+		INDEX = 97;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2676,7 +2668,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUTPUT";
-		INDEX = 99;
+		INDEX = 98;
 		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2684,7 +2676,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUTPUT[7]";
-		INDEX = 100;
+		INDEX = 99;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2692,7 +2684,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUTPUT[6]";
-		INDEX = 101;
+		INDEX = 100;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2700,7 +2692,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUTPUT[5]";
-		INDEX = 102;
+		INDEX = 101;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2708,7 +2700,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUTPUT[4]";
-		INDEX = 103;
+		INDEX = 102;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2716,7 +2708,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUTPUT[3]";
-		INDEX = 104;
+		INDEX = 103;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2724,7 +2716,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUTPUT[2]";
-		INDEX = 105;
+		INDEX = 104;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2732,7 +2724,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUTPUT[1]";
-		INDEX = 106;
+		INDEX = 105;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2740,7 +2732,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUTPUT[0]";
-		INDEX = 107;
+		INDEX = 106;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2748,7 +2740,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUTPUT_PC";
-		INDEX = 108;
+		INDEX = 107;
 		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2756,7 +2748,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUTPUT_PC[7]";
-		INDEX = 109;
+		INDEX = 108;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2764,7 +2756,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUTPUT_PC[6]";
-		INDEX = 110;
+		INDEX = 109;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2772,7 +2764,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUTPUT_PC[5]";
-		INDEX = 111;
+		INDEX = 110;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2780,7 +2772,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUTPUT_PC[4]";
-		INDEX = 112;
+		INDEX = 111;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2788,7 +2780,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUTPUT_PC[3]";
-		INDEX = 113;
+		INDEX = 112;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2796,7 +2788,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUTPUT_PC[2]";
-		INDEX = 114;
+		INDEX = 113;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2804,7 +2796,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUTPUT_PC[1]";
-		INDEX = 115;
+		INDEX = 114;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2812,7 +2804,7 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "OUTPUT_PC[0]";
-		INDEX = 116;
+		INDEX = 115;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2820,6 +2812,977 @@ VECTOR("D:/workspace/risc-cpu/risc-cpu/db/risc-cpu.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "RST";
+		INDEX = 116;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "STEP";
+		INDEX = 117;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+}
+
+VECTOR("D:/workspace/risc-cpu/risc-cpu/testr1.vwf")
+{
+	ZOOM{
+		ZBEGIN = 0;
+		ZEND = 433200;
+		NUMERATOR = 1083;
+		DENOMINATOR = 433200;
+		TOP_INDEX = 0;
+	}
+	CLOCK{
+		PERIOD = 10000;
+		OFFSET = 0;
+		DUTY_CYCLE = 50;
+	}
+	RANDOM_VALUE{
+		INTERVAL_TYPE = HALF_GRID;
+	}
+	LINE{
+		SIGNAL = "CLK";
+		INDEX = 0;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "INPUT";
+		INDEX = 1;
+		FORMAT = T;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "INPUT[7]";
+		INDEX = 2;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "INPUT[6]";
+		INDEX = 3;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "INPUT[5]";
+		INDEX = 4;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "INPUT[4]";
+		INDEX = 5;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "INPUT[3]";
+		INDEX = 6;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "INPUT[2]";
+		INDEX = 7;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "INPUT[1]";
+		INDEX = 8;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "INPUT[0]";
+		INDEX = 9;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_ALU";
+		INDEX = 10;
+		FORMAT = T;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_ALU[7]";
+		INDEX = 11;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_ALU[6]";
+		INDEX = 12;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_ALU[5]";
+		INDEX = 13;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_ALU[4]";
+		INDEX = 14;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_ALU[3]";
+		INDEX = 15;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_ALU[2]";
+		INDEX = 16;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_ALU[1]";
+		INDEX = 17;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_ALU[0]";
+		INDEX = 18;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_AR";
+		INDEX = 19;
+		FORMAT = T;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_AR[7]";
+		INDEX = 20;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_AR[6]";
+		INDEX = 21;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_AR[5]";
+		INDEX = 22;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_AR[4]";
+		INDEX = 23;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_AR[3]";
+		INDEX = 24;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_AR[2]";
+		INDEX = 25;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_AR[1]";
+		INDEX = 26;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_AR[0]";
+		INDEX = 27;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_DFF0";
+		INDEX = 28;
+		FORMAT = T;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_DFF0[7]";
+		INDEX = 29;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_DFF0[6]";
+		INDEX = 30;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_DFF0[5]";
+		INDEX = 31;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_DFF0[4]";
+		INDEX = 32;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_DFF0[3]";
+		INDEX = 33;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_DFF0[2]";
+		INDEX = 34;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_DFF0[1]";
+		INDEX = 35;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_DFF0[0]";
+		INDEX = 36;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_DFF1";
+		INDEX = 37;
+		FORMAT = T;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_DFF1[7]";
+		INDEX = 38;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_DFF1[6]";
+		INDEX = 39;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_DFF1[5]";
+		INDEX = 40;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_DFF1[4]";
+		INDEX = 41;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_DFF1[3]";
+		INDEX = 42;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_DFF1[2]";
+		INDEX = 43;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_DFF1[1]";
+		INDEX = 44;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_DFF1[0]";
+		INDEX = 45;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_IR";
+		INDEX = 46;
+		FORMAT = T;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_IR[7]";
+		INDEX = 47;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_IR[6]";
+		INDEX = 48;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_IR[5]";
+		INDEX = 49;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_IR[4]";
+		INDEX = 50;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_IR[3]";
+		INDEX = 51;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_IR[2]";
+		INDEX = 52;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_IR[1]";
+		INDEX = 53;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_IR[0]";
+		INDEX = 54;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_M";
+		INDEX = 55;
+		FORMAT = T;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_M[22]";
+		INDEX = 56;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_M[21]";
+		INDEX = 57;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_M[20]";
+		INDEX = 58;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_M[19]";
+		INDEX = 59;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_M[18]";
+		INDEX = 60;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_M[17]";
+		INDEX = 61;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_M[16]";
+		INDEX = 62;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_M[15]";
+		INDEX = 63;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_M[14]";
+		INDEX = 64;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_M[13]";
+		INDEX = 65;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_M[12]";
+		INDEX = 66;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_M[11]";
+		INDEX = 67;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_M[10]";
+		INDEX = 68;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_M[9]";
+		INDEX = 69;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_M[8]";
+		INDEX = 70;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_M[7]";
+		INDEX = 71;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_M[6]";
+		INDEX = 72;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_M[5]";
+		INDEX = 73;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_M[4]";
+		INDEX = 74;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_M[3]";
+		INDEX = 75;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_M[2]";
+		INDEX = 76;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_M[1]";
+		INDEX = 77;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_M[0]";
+		INDEX = 78;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_NMA";
+		INDEX = 79;
+		FORMAT = T;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_NMA[4]";
+		INDEX = 80;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_NMA[3]";
+		INDEX = 81;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_NMA[2]";
+		INDEX = 82;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_NMA[1]";
+		INDEX = 83;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_NMA[0]";
+		INDEX = 84;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_RAM";
+		INDEX = 85;
+		FORMAT = T;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_RAM[7]";
+		INDEX = 86;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_RAM[6]";
+		INDEX = 87;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_RAM[5]";
+		INDEX = 88;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_RAM[4]";
+		INDEX = 89;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_RAM[3]";
+		INDEX = 90;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_RAM[2]";
+		INDEX = 91;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_RAM[1]";
+		INDEX = 92;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_RAM[0]";
+		INDEX = 93;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_T1";
+		INDEX = 94;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_T2";
+		INDEX = 95;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_T3";
+		INDEX = 96;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUT_T4";
+		INDEX = 97;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUTPUT";
+		INDEX = 98;
+		FORMAT = T;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUTPUT[7]";
+		INDEX = 99;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUTPUT[6]";
+		INDEX = 100;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUTPUT[5]";
+		INDEX = 101;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUTPUT[4]";
+		INDEX = 102;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUTPUT[3]";
+		INDEX = 103;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUTPUT[2]";
+		INDEX = 104;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUTPUT[1]";
+		INDEX = 105;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUTPUT[0]";
+		INDEX = 106;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUTPUT_PC";
+		INDEX = 107;
+		FORMAT = T;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUTPUT_PC[7]";
+		INDEX = 108;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUTPUT_PC[6]";
+		INDEX = 109;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUTPUT_PC[5]";
+		INDEX = 110;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUTPUT_PC[4]";
+		INDEX = 111;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUTPUT_PC[3]";
+		INDEX = 112;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUTPUT_PC[2]";
+		INDEX = 113;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUTPUT_PC[1]";
+		INDEX = 114;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "OUTPUT_PC[0]";
+		INDEX = 115;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "RST";
+		INDEX = 116;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "STEP";
 		INDEX = 117;
 		FORMAT = E;
 		SCALE = 1;

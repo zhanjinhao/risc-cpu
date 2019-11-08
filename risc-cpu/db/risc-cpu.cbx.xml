@@ -12,7 +12,7 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|cpu|lpm_counter0:inst6|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_k5j.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|cpu|ALU:inst9|LPM_MUX:Mux2" CBX_FILE_NAME="mux_cqc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|cpu|ALU:inst9|LPM_MUX:Mux6" CBX_FILE_NAME="mux_cqc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|cpu|lpm_ram_dq0:inst3|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_srh1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|cpu|lpm_ram_dq0:inst3|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_v4i1.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|cpu|register-heap:inst16|lpm_mux2:inst17|LPM_MUX:lpm_mux_component" CBX_FILE_NAME="mux_j6e.tdf"/>
 	</PROJECT>
 </LOG_ROOT>
